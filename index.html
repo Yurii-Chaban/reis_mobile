@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Reis</title>
+
+	<!-- Include media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- Include styles -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="dropdovn-menu">
+	            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+				<label class="btn-menu" for="hmt">
+				  <span class="first"></span>
+				  <span class="second"></span>
+				  <span class="third"></span>
+				</label>
+				<ul class="hidden-menu">
+	                <li>
+	                	<a href="culture_academy_home_3.html">Home</a>
+	                </li>
+	                <li>
+	                	<a href="culture_academy_about_company.html">About us</a>
+	                </li>
+	                <li>
+	                	<a href="culture_academy_services.html">Services</a>
+	                </li>
+	                <li>
+	                	<a href="culture_academy_schools.html">Schools</a>
+	            	</li>
+	            	<li>
+	                	<a href="culture_academy_faq.html">FAQ</a>
+	            	</li>
+					<li>
+	                	<a href="culture_academy_testimonials.html">Testimonials</a>
+	            	</li>
+					<li>
+	                	<a href="culture_academy_blog.html">Blog</a>
+	            	</li>
+					<li>
+	                	<a href="culture_academy_contact_us.html">Contact us</a>
+	            	</li>
+	            </ul>
+	        </div>
+	        <div class="header-info">
+	        	<a href="tel:123 456-7890">
+	        		<img src="images/icon-phone.png" alt="icon-phone">
+	        		<span class="phone">(123) 456-7890</span>
+	        	</a>
+	        	<a class="ask-a-question" href="#">Ask A Question</a>
+	        </div>
+	        <div class="call-us-block">
+				<label for="hider"><img src="images/icon-phone.png" alt="icon-phone"></label>
+				<input type="checkbox" checked="no" id="hider">
+				<div id="info-mobile" class="header-info-mobile">
+		        	<a href="tel:123 456-7890">
+		        		<span class="phone">(123) 456-7890</span>
+		        	</a>
+		        	<a class="ask-a-question" href="#">Ask A Question</a>
+		        </div>
+	        </div>
+	        <h1 class="logo">
+	        	<a href="culture_academy_home_3.html">
+	        		<img src="images/logo.png" alt="Calture Exchange Academy">
+	        	</a>
+	        </h1>
+        </div>
+        <div class="desctop-menu">
+        	<div class="wrapper">
+        		<ul class="list-menu">
+	                <li>
+	                	<a href="culture_academy_home_3.html">Home</a>
+	                </li>
+	                <li>
+	                	<a href="culture_academy_about_company.html">About us</a>
+	                </li>
+	                <li>
+	                	<a href="culture_academy_services.html">Services</a>
+	                </li>
+	                <li>
+	                	<a href="culture_academy_schools.html">Schools</a>
+	            	</li>
+	            	<li>
+	                	<a href="culture_academy_faq.html">FAQ</a>
+	            	</li>
+					<li>
+	                	<a href="culture_academy_testimonials.html">Testimonials</a>
+	            	</li>
+					<li>
+	                	<a href="culture_academy_blog.html">Blog</a>
+	            	</li>
+					<li>
+	                	<a href="culture_academy_contact_us.html">Contact us</a>
+	            	</li>
+	            </ul>
+        	</div>
+        </div>
+	</header>
+	
+	<script>
+		$(function () {
+	        $('.footer-menu li a').each(function () {
+	            var location = window.location.href;
+	            var link = this.href;
+	            var result = location.match(link);
+	            if(result) {
+	            $(this).addClass('active-footer');
+	            }
+	        });
+	    });
+	</script>
+</body>
+</html>

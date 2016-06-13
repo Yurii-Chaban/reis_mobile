@@ -1,0 +1,342 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.1.0.alpha.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*Arial regular*/
+@font-face {
+  font-family: 'Arial';
+  src: url("../resorces/Arial/Arial-Regular.eot");
+  src: url("../resorces/Arial/Arial-Regular.eot?#iefix") format("embedded-opentype"), url("../resorces/Arial/Arial-Regular.woff") format("woff"), url("../resorces/Arial/Arial-Regular.ttf") format("truetype"), url("../resorces/Arial/Arial-Regular.svg#Arial-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Arial black*/
+@font-face {
+  font-family: 'Arial';
+  src: url("../resorces/Arial/arial_black-webfont.woff2") format("woff2"), url("../resorces/Arial/arial_black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Arial bold*/
+@font-face {
+  font-family: 'Arial';
+  src: url("../resorces/Arial/arial_bold_italic-webfont.woff2") format("woff2"), url("../resorces/Arial/arial_bold_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*Arial bold italic*/
+@font-face {
+  font-family: 'Arial';
+  src: url("../resorces/Arial/arial_bold-webfont.woff2") format("woff2"), url("../resorces/Arial/arial_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 56, ../sass/styles.scss */
+header .desctop-menu {
+  display: none;
+}
+
+/* line 60, ../sass/styles.scss */
+.hidden-menu {
+  display: block;
+  float: left;
+  position: absolute;
+  list-style: none;
+  padding: 50px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 195px;
+  background-color: #fff;
+  height: auto;
+  top: 0;
+  left: -250px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+/* line 79, ../sass/styles.scss */
+.hidden-menu li {
+  display: block;
+  width: 100%;
+  height: 43px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 43px;
+  vertical-align: middle;
+}
+/* line 88, ../sass/styles.scss */
+.hidden-menu li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #2c2e65;
+  line-height: 43px;
+  font-family: 'HelveticaNeue', sans-serif;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 101, ../sass/styles.scss */
+.hidden-menu li a:hover {
+  color: #fff;
+  background-color: #e60012;
+}
+
+/* line 109, ../sass/styles.scss */
+.hidden-menu-ticker {
+  display: none;
+}
+
+/* line 112, ../sass/styles.scss */
+.btn-menu {
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 5px;
+  position: relative;
+  float: left;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 30px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* line 127, ../sass/styles.scss */
+.btn-menu span {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+
+/* line 135, ../sass/styles.scss */
+.btn-menu span.first {
+  margin-top: 0;
+}
+
+/* line 138, ../sass/styles.scss */
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 145px;
+}
+
+/* line 141, ../sass/styles.scss */
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+
+/*logo*/
+/* line 145, ../sass/styles.scss */
+.logo {
+  max-width: 149px;
+  overflow: hidden;
+  margin: 0 auto;
+  /*float: left;*/
+}
+
+/* line 151, ../sass/styles.scss */
+.header-info {
+  display: none;
+}
+
+/*dropdown filter*/
+/* line 156, ../sass/styles.scss */
+.call-us-block {
+  float: right;
+  margin: 5px 10px 0 0;
+  line-height: 33px;
+  vertical-align: middle;
+}
+/* line 162, ../sass/styles.scss */
+.call-us-block img {
+  display: inline-block;
+  line-height: 33px;
+  vertical-align: middle;
+}
+
+/* line 168, ../sass/styles.scss */
+#info-mobile form input[type='submit'] {
+  display: block;
+  width: 51px;
+  height: 41px;
+  float: right;
+  border: none;
+  margin: 20px 20px 16px 20px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, Sans Serif;
+  color: #FFFFFF;
+  background-color: #f70036;
+  border-radius: 2px 3px 3px 2px;
+}
+
+/* line 181, ../sass/styles.scss */
+.add-client {
+  display: inline-block;
+  width: 30px;
+  height: 26px;
+  margin: 4px 10px 0 0;
+  background-color: #f70036;
+  border-radius: 0;
+  overflow: hidden;
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* line 193, ../sass/styles.scss */
+#info-mobile {
+  height: 185px;
+  background: #fff;
+  width: 225px;
+  clear: none;
+  float: right;
+  position: absolute;
+  top: 36px;
+  right: 0;
+  z-index: 2;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 205, ../sass/styles.scss */
+#info-mobile a {
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+}
+/* line 209, ../sass/styles.scss */
+#info-mobile a .phone {
+  color: #171c61;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+/* line 217, ../sass/styles.scss */
+#info-mobile .ask-a-question {
+  width: 153px;
+  height: 44px;
+  border: 1.49px solid #e60012;
+  color: #e60012;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 44px;
+  text-transform: uppercase;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 229, ../sass/styles.scss */
+#info-mobile .ask-a-question:hover {
+  background: #e60012;
+  color: #fff;
+}
+
+/* line 235, ../sass/styles.scss */
+label {
+  color: #000;
+  float: right;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+/* line 240, ../sass/styles.scss */
+label .fa-phone {
+  font-size: 23px;
+  color: #171c61;
+}
+
+/* line 245, ../sass/styles.scss */
+input {
+  display: none;
+}
+
+/* line 246, ../sass/styles.scss */
+input:checked + #info-mobile {
+  display: none;
+}
+
+/*end dropdown filter*/
+/*end menu*/
+/*---------------------------------------*/

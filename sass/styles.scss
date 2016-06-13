@@ -1,0 +1,249 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+/*Arial regular*/
+@font-face {
+    font-family: 'Arial';
+    src: url('../resorces/Arial/Arial-Regular.eot');
+    src: url('../resorces/Arial/Arial-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../resorces/Arial/Arial-Regular.woff') format('woff'),
+    url('../resorces/Arial/Arial-Regular.ttf') format('truetype'),
+    url('../resorces/Arial/Arial-Regular.svg#Arial-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Arial black*/
+@font-face {
+    font-family: 'Arial';
+    src: url('../resorces/Arial/arial_black-webfont.woff2') format('woff2'),
+         url('../resorces/Arial/arial_black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Arial bold*/
+@font-face {
+    font-family: 'Arial';
+    src: url('../resorces/Arial/arial_bold_italic-webfont.woff2') format('woff2'),
+         url('../resorces/Arial/arial_bold_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Arial bold italic*/
+@font-face {
+    font-family: 'Arial';
+    src: url('../resorces/Arial/arial_bold-webfont.woff2') format('woff2'),
+         url('../resorces/Arial/arial_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@mixin transition {
+    -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+header {
+    .desctop-menu {
+        display: none;
+    }
+}
+.hidden-menu {
+  display: block;
+  float: left;
+  position: absolute;
+  list-style:none;
+  padding: 50px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 195px;
+  background-color: #fff;
+  height: auto;
+  top: 0;
+  left: -250px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+
+  li {
+    display: block;
+    width: 100%;
+    height: 43px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 43px;
+    vertical-align: middle;
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #2c2e65;
+        line-height: 43px;
+        font-family: 'HelveticaNeue', sans-serif;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        @include transition;
+
+        &:hover {
+            color: #fff;
+            background-color: #e60012;
+        }
+    }
+  }
+
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 5px;
+  position: relative;
+  float: left;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 30px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 145px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+/*logo*/
+.logo {
+  max-width: 149px;
+  overflow: hidden;
+  margin: 0 auto;
+  /*float: left;*/
+}
+.header-info {
+  display: none;
+}
+
+/*dropdown filter*/
+    .call-us-block {
+        float: right;
+        margin: 5px 10px 0 0;
+        line-height: 33px;
+        vertical-align: middle;
+
+        img {
+          display: inline-block;
+      line-height: 33px;
+      vertical-align: middle;
+        }
+    }
+    #info-mobile form input[type='submit'] {
+        display: block;
+        width: 51px;
+        height: 41px;
+        float: right;
+        border: none;
+        margin: 20px 20px 16px 20px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, Sans Serif;
+        color: #FFFFFF;
+        background-color: #f70036;
+        border-radius: 2px 3px 3px 2px;
+    }
+    .add-client {
+      display: inline-block;
+    width: 30px;
+    height: 26px;
+    margin: 4px 10px 0 0;
+    background-color: #f70036;
+    border-radius: 0;
+    overflow: hidden;
+    color: #fff;
+    line-height: 26px;
+    text-align: center;
+    }
+    #info-mobile {
+        height:185px;
+        background:#fff;
+        width:225px;
+        clear:none;
+        float: right;
+        position: absolute;
+        top: 36px;
+        right: 0;
+        z-index: 2;
+        @include transition;
+
+        a {
+            display: block;
+            margin: 15px auto;
+            text-align: center;
+            .phone {
+                color: #171c61;
+                font-size: 30px;
+                font-weight: 400;
+                line-height: 35px;
+                text-transform: uppercase;
+            }
+        }
+        .ask-a-question {
+            width: 153px;
+            height: 44px;
+            border: 1.49px solid #e60012;
+            color: #e60012;
+            font-size: 16px;
+            font-weight: 400;
+            text-align: center;
+            line-height: 44px;
+            text-transform: uppercase;
+            @include transition;
+
+            &:hover {
+                background: #e60012;
+                color: #fff;
+            }
+        }
+    }
+    label {
+        color: #000; 
+        float: right; 
+        cursor: pointer;
+        @include transition;
+        .fa-phone {
+            font-size: 23px;
+            color: #171c61;
+        }
+    }
+    input{display:none;}
+    input:checked+#info-mobile{display:none;}
+  /*end dropdown filter*/
+/*end menu*/
+/*---------------------------------------*/
