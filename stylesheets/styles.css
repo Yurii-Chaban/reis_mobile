@@ -97,72 +97,103 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
 }
 /* line 56, ../sass/styles.scss */
+body {
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* line 63, ../sass/styles.scss */
 header .desctop-menu {
   display: none;
 }
 
-/* line 60, ../sass/styles.scss */
+/* line 67, ../sass/styles.scss */
 .hidden-menu {
   display: block;
   float: left;
   position: absolute;
   list-style: none;
-  padding: 50px 0 0 0;
+  padding: 50px 0 37px 0;
   margin: 0 auto;
   text-align: center;
   box-sizing: border-box;
-  width: 195px;
-  background-color: #fff;
+  max-width: 339px;
+  width: 100%;
+  background-color: #f1f1f1;
   height: auto;
   top: 0;
-  left: -250px;
+  left: -339px;
+  overflow: hidden;
   transition: left .2s;
   z-index: 2;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
-/* line 79, ../sass/styles.scss */
+/* line 88, ../sass/styles.scss */
 .hidden-menu li {
   display: block;
   width: 100%;
   height: 43px;
-  margin: 0 auto;
-  text-align: center;
+  margin: 25px 0 25px 24px;
+  text-align: left;
   line-height: 43px;
   vertical-align: middle;
 }
-/* line 88, ../sass/styles.scss */
+/* line 97, ../sass/styles.scss */
 .hidden-menu li a {
-  display: block;
   width: 100%;
   height: 100%;
-  color: #2c2e65;
-  line-height: 43px;
-  font-family: 'HelveticaNeue', sans-serif;
-  vertical-align: middle;
-  font-size: 16px;
+  color: #006598;
+  font-size: 25px;
   font-weight: 400;
-  text-transform: uppercase;
+  line-height: 30px;
+  text-decoration: none;
+  text-align: left;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 101, ../sass/styles.scss */
-.hidden-menu li a:hover {
-  color: #fff;
-  background-color: #e60012;
+/* line 114, ../sass/styles.scss */
+.hidden-menu li:first-child {
+  margin-top: 0;
+}
+/* line 119, ../sass/styles.scss */
+.hidden-menu .language-select a, .hidden-menu .language-select span {
+  color: #006598;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 126, ../sass/styles.scss */
+.hidden-menu .full-version-batton {
+  display: block;
+  max-width: 247px;
+  height: 54px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 54px;
+  color: #61a411;
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: none;
+  border: 1.49px solid #61a411;
+}
+/* line 138, ../sass/styles.scss */
+.hidden-menu .full-version-batton a {
+  color: #61a411;
 }
 
-/* line 109, ../sass/styles.scss */
+/* line 143, ../sass/styles.scss */
 .hidden-menu-ticker {
   display: none;
 }
 
-/* line 112, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .btn-menu {
   color: #fff;
-  background-color: #1e1e1e;
+  background-color: none;
   padding: 5px;
   position: relative;
   float: left;
@@ -176,61 +207,61 @@ header .desctop-menu {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 127, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 .btn-menu span {
   display: block;
   height: 3px;
-  background-color: #fff;
+  background-color: #818285;
   margin: 3px 0 0;
   transition: all .1s linear .23s;
   position: relative;
 }
 
-/* line 135, ../sass/styles.scss */
+/* line 169, ../sass/styles.scss */
 .btn-menu span.first {
   margin-top: 0;
 }
 
-/* line 138, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 .hidden-menu-ticker:checked ~ .btn-menu {
-  left: 145px;
+  left: 85%;
 }
 
-/* line 141, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 .hidden-menu-ticker:checked ~ .hidden-menu {
   left: 0;
 }
 
 /*logo*/
-/* line 145, ../sass/styles.scss */
+/* line 179, ../sass/styles.scss */
 .logo {
-  max-width: 149px;
+  max-width: 100%;
   overflow: hidden;
-  margin: 0 auto;
-  /*float: left;*/
+  margin: 10px auto;
+  text-align: center;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 185, ../sass/styles.scss */
 .header-info {
   display: none;
 }
 
 /*dropdown filter*/
-/* line 156, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .call-us-block {
   float: right;
   margin: 5px 10px 0 0;
   line-height: 33px;
   vertical-align: middle;
 }
-/* line 162, ../sass/styles.scss */
+/* line 196, ../sass/styles.scss */
 .call-us-block img {
   display: inline-block;
   line-height: 33px;
   vertical-align: middle;
 }
 
-/* line 168, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 #info-mobile form input[type='submit'] {
   display: block;
   width: 51px;
@@ -245,7 +276,7 @@ header .desctop-menu {
   border-radius: 2px 3px 3px 2px;
 }
 
-/* line 181, ../sass/styles.scss */
+/* line 215, ../sass/styles.scss */
 .add-client {
   display: inline-block;
   width: 30px;
@@ -259,15 +290,15 @@ header .desctop-menu {
   text-align: center;
 }
 
-/* line 193, ../sass/styles.scss */
+/* line 227, ../sass/styles.scss */
 #info-mobile {
   height: 185px;
   background: #fff;
-  width: 225px;
+  width: auto;
   clear: none;
   float: right;
   position: absolute;
-  top: 36px;
+  top: 72px;
   right: 0;
   z-index: 2;
   -webkit-transition: all .3s ease-in-out;
@@ -275,13 +306,13 @@ header .desctop-menu {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 205, ../sass/styles.scss */
+/* line 239, ../sass/styles.scss */
 #info-mobile a {
   display: block;
   margin: 15px auto;
   text-align: center;
 }
-/* line 209, ../sass/styles.scss */
+/* line 243, ../sass/styles.scss */
 #info-mobile a .phone {
   color: #171c61;
   font-size: 30px;
@@ -289,29 +320,8 @@ header .desctop-menu {
   line-height: 35px;
   text-transform: uppercase;
 }
-/* line 217, ../sass/styles.scss */
-#info-mobile .ask-a-question {
-  width: 153px;
-  height: 44px;
-  border: 1.49px solid #e60012;
-  color: #e60012;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  line-height: 44px;
-  text-transform: uppercase;
-  -webkit-transition: all .3s ease-in-out;
-  -moz-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-/* line 229, ../sass/styles.scss */
-#info-mobile .ask-a-question:hover {
-  background: #e60012;
-  color: #fff;
-}
 
-/* line 235, ../sass/styles.scss */
+/* line 252, ../sass/styles.scss */
 label {
   color: #000;
   float: right;
@@ -321,18 +331,18 @@ label {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 240, ../sass/styles.scss */
+/* line 257, ../sass/styles.scss */
 label .fa-phone {
   font-size: 23px;
   color: #171c61;
 }
 
-/* line 245, ../sass/styles.scss */
+/* line 262, ../sass/styles.scss */
 input {
   display: none;
 }
 
-/* line 246, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 input:checked + #info-mobile {
   display: none;
 }
@@ -340,3 +350,59 @@ input:checked + #info-mobile {
 /*end dropdown filter*/
 /*end menu*/
 /*---------------------------------------*/
+/* line 270, ../sass/styles.scss */
+.main-page input {
+  display: block;
+}
+
+/* line 277, ../sass/styles.scss */
+footer {
+  padding: 34px 0 25px;
+  background: url(../images/footer-bg.jpg) repeat-x;
+}
+/* line 280, ../sass/styles.scss */
+footer .footer-content {
+  max-width: 218px;
+  margin: 0 auto 14px;
+  text-align: center;
+  color: #0096dc;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  font-style: italic;
+  text-transform: uppercase;
+}
+/* line 291, ../sass/styles.scss */
+footer span {
+  display: block;
+  text-transform: none;
+  font-weight: 400;
+}
+/* line 296, ../sass/styles.scss */
+footer .footer-phone {
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  color: #636363;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 20px;
+}
+/* line 305, ../sass/styles.scss */
+footer .copyright {
+  margin: 18px auto 0;
+  text-align: center;
+  color: #636363;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* line 313, ../sass/styles.scss */
+footer .copyright a {
+  color: #636363;
+  text-decoration: none;
+}
+/* line 317, ../sass/styles.scss */
+footer .copyright a:hover {
+  text-decoration: underline;
+}
