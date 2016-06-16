@@ -15,7 +15,6 @@
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
 	<link rel="stylesheet" href="stylesheets/jquery-ui.css">
-	<link rel="stylesheet" href="stylesheets/swiper.css">
 	<link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
@@ -83,105 +82,10 @@
 	</header>
 	<section class="buss-rent">
 		<div class="wrapper">
-			<div class="rent-content">
-				<!-- Slider main container -->
-				<div class="swiper-container">
-				    <!-- Additional required wrapper -->
-				    <div class="swiper-wrapper">
-				        <!-- Slides -->
-				        <div class="swiper-slide">
-							<img src="images/buss-item-1.png" alt="MERCEDES 350">
-				        </div>
-				        <div class="swiper-slide">
-				        	<img src="images/buss-item-1.png" alt="MERCEDES 350">
-				        </div>
-				        <div class="swiper-slide">
-							<img src="images/buss-item-1.png" alt="MERCEDES 350">
-				        </div>
-				    </div>
-				    <!-- If we need pagination -->
-				    <div class="swiper-pagination"></div>
-				    
-				    <!-- If we need navigation buttons -->
-				    <div class="swiper-button-prev"></div>
-				    <div class="swiper-button-next"></div>
-				    
-				    <!-- If we need scrollbar -->
-				    <div class="swiper-scrollbar"></div>
-				</div>
-
-				<h2 class="buss-info">
-					<span class="pre-title">Автобус: </span>
-					<span class="buss-model">MERCEDES 350</span>
-					<span class="region">Регіон: Вінниця</span>
-				</h2>
-				<ul class="bus-specifications">
-					<li>
-						<h4>Кількість місць:</h4>
-						<span>10</span>
-					</li>
-					<li>
-						<h4>Рік випуску:</h4>
-						<span>1999</span>
-					</li>
-					<li>
-						<h4>Колір автобусу:</h4>
-						<span>білий</span>
-					</li>
-					<li>
-						<h4>Можливість виїзду за кордон:</h4>
-						<span>так</span>
-					</li>
-				</ul>
-				<h2 class="tarif-title">Тарифи</h2>
-				<ul>
-					<li>
-						<h4>Трансфер:</h4>
-						<span>договірні</span>
-					</li>
-					<li>
-						<h4>1 год. по місту:</h4>
-						<span>договірні</span>
-					</li>
-					<li>
-						<h4>1 км. по Україні:</h4>
-						<span>договірні</span>
-					</li>
-					<li>
-						<h4>Мінімальне замовлення:</h4>
-						<span></span>
-					</li>
-					<li>
-						<h4>Вигоди:</h4>
-						<span>5 зірковий автобус, Окрема кімната із спальними місцями, Душ, 2 Туалети, 4 LCD-монітора, LCD-TV + DVD, Аудіосистема, Клімат-контроля, Електрична плита, Кавоварка, Мікрохвильова піч, 2 Холодильника, Круглий стіл на 6 персон зі шкіряними сидіннями.</span>
-					</li>
-				</ul>
-				<div class="contacts-for-bus">
-					<h2 class="title-contact">Контакти:</h2>
-					<span class="description-contact">ТОВ ТРАНСТЕМПО
-					М. КИЇВ, ВУЛ. БОГДАНА 
-					ХМЕЛЬНИЦЬКОГО, 56
-					0442340740, 0674674400
-					TRANSTEMPO@UKR.NET
-					ТЕТЯНА</span>
-				</div>
-				<div class="assessment">
-					<h2 class="assessment-title">Оцінка</h2>
-					<form id="choice-form" action="#" method="post">
-					<span class="star-rating">
-					  <input type="radio" name="rating" value="1"><i></i>
-					  <input type="radio" name="rating" value="2"><i></i>
-					  <input type="radio" name="rating" value="3"><i></i>
-					  <input type="radio" name="rating" value="4"><i></i>
-					  <input type="radio" name="rating" value="5"><i></i>
-					</span>
-					<strong class="choice">Choose a rating</strong>
-					<input type="submit" name="chooce" value="Залишити відгук">
-				</form>
-				<h3 class="assessment-condition">Відгуків немає</h3>
-				<span class="assessment-sign">Ви маєте можливість залишити відгук першим!</span>
-				</div>
+			<div class="rate_background" onclick="set_rate(arguments[0], this);">
+			    <div class="rate_bar" style="width:50%;"></div>
 			</div>
+			<div id="rate"></div>
 		</div>
 	</section>
 	<footer>
@@ -201,7 +105,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.ui.datepicker-ru.js"></script>
 	<script src="js/jquery-ui.js"></script>
-	<script src="js/swiper.min.js"></script>
 	<script>
 		 $(function () {
 	        $('.hidden-menu li a').each(function () {
@@ -227,31 +130,10 @@
 	    });
 	</script>
 	<script>
-		$(function() {
-		    $("#datepicker1").datepicker($.datepicker.regional["ru"]);
-		    $("#datepicker2").datepicker($.datepicker.regional["ru"]);
-		});
-	</script>
-	<script>
-		$(':radio').change(
-		  function(){
-		    $('.choice').text( this.value );
-		  } 
-		)
-	</script>
-	<script>
-		 var swiper = new Swiper('.swiper-container', {
-	        pagination: '.swiper-pagination',
-	        paginationClickable: true,
-	        nextButton: '.swiper-button-next',
-	        prevButton: '.swiper-button-prev',
-	        centeredSlides: true,
-	        // spaceBetween: 30,
-	        autoplay:1500,
-	        bulletClass: 'swiper-pagination-bullet',
-	        bulletActiveClass: 'swiper-pagination-bullet-active',
-	        speed:800
-	    });
+	$(function() {
+	    $("#datepicker1").datepicker($.datepicker.regional["ru"]);
+	    $("#datepicker2").datepicker($.datepicker.regional["ru"]);
+	});
 	</script>
 	<!-- This sourse fot active navigation. Uncomment this code fot activete navigation pagination -->
 	<!-- <script>
@@ -266,5 +148,17 @@
 	        });
 	    });
 	</script> -->
+	<script type="text/javascript">
+		function set_rate(event, el) {
+		    // Позиция клика относительно элемента
+		    event = event || window.event;
+		    if (event.clientX<=el.clientWidth) {
+		        var rate=Math.ceil(event.clientX/el.clientWidth*5);
+		 
+		        // Теперь значение rate от 1 до 5 можно обрабатывать как надо,
+		        // например, отправить на сервер через AJAX
+		    }
+		}
+	</script>
 </body>
 </html>
