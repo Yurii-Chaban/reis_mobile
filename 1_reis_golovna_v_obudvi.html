@@ -122,7 +122,7 @@
 				<input class="text-field" type="text" name="where-ticket" placeholder="Куди">
 				<!-- <input type="date" name="calendar"> -->
 				<p class="date"> 
-					<input type="text" id="datepicker">
+					<input type="text" id="datepicker1" name="datepicker1" value="">
 					<img src="images/calendar.png" alt="calendar">
 				</p>
 				<div class="ather-date">
@@ -132,7 +132,7 @@
 				</div>
 				<input type="text" name="ather-side" placeholder="Куди">
 				<p class="date"> 
-					<input type="text" id="datepicker-2">
+					<input type="text" id="datepicker2" name="datepicker2" value="">
 					<img src="images/calendar.png" alt="calendar">
 				</p>
 				<input type="submit" value="пошук">
@@ -205,9 +205,10 @@
 	    });
 	</script>
 	<script>
-		$(function() {
-		    $("#datepicker").datepicker($.datepicker.regional["ru"]);
-		});
+	$(function() {
+	    $("#datepicker1").datepicker($.datepicker.regional["ru"]);
+	    $("#datepicker2").datepicker($.datepicker.regional["ru"]);
+	});
 	</script>
 </body>
 </html>
