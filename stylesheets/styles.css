@@ -97,18 +97,26 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-style: normal;
 }
 /* line 45, ../sass/styles.scss */
-input[type="text"]:focus {
+input {
+  cursor: pointer;
+}
+
+/* line 48, ../sass/styles.scss */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:focus,
+input[type="radio"]:focus {
   outline: none;
 }
 
-/* line 56, ../sass/styles.scss */
+/* line 64, ../sass/styles.scss */
 body {
   font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 18px;
 }
 
-/* line 61, ../sass/styles.scss */
+/* line 69, ../sass/styles.scss */
 .wrapper {
   max-width: 960px;
   width: 100%;
@@ -118,12 +126,17 @@ body {
   box-sizing: border-box;
 }
 
-/* line 71, ../sass/styles.scss */
+/* line 78, ../sass/styles.scss */
+header {
+  background-color: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 1, 0.75);
+}
+/* line 81, ../sass/styles.scss */
 header .desctop-menu {
   display: none;
 }
 
-/* line 75, ../sass/styles.scss */
+/* line 85, ../sass/styles.scss */
 .hidden-menu {
   display: block;
   float: left;
@@ -145,7 +158,7 @@ header .desctop-menu {
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
 }
-/* line 96, ../sass/styles.scss */
+/* line 106, ../sass/styles.scss */
 .hidden-menu li {
   display: block;
   width: 100%;
@@ -155,7 +168,7 @@ header .desctop-menu {
   line-height: 43px;
   vertical-align: middle;
 }
-/* line 105, ../sass/styles.scss */
+/* line 115, ../sass/styles.scss */
 .hidden-menu li a {
   width: 100%;
   height: 100%;
@@ -170,18 +183,18 @@ header .desctop-menu {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 122, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .hidden-menu li:first-child {
   margin-top: 0;
 }
-/* line 127, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .hidden-menu .language-select a, .hidden-menu .language-select span {
   color: #006598;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
 }
-/* line 134, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 .hidden-menu .full-version-batton {
   display: block;
   max-width: 247px;
@@ -195,17 +208,17 @@ header .desctop-menu {
   text-decoration: none;
   border: 1.49px solid #61a411;
 }
-/* line 146, ../sass/styles.scss */
+/* line 156, ../sass/styles.scss */
 .hidden-menu .full-version-batton a {
   color: #61a411;
 }
 
-/* line 151, ../sass/styles.scss */
+/* line 161, ../sass/styles.scss */
 .hidden-menu-ticker {
   display: none;
 }
 
-/* line 154, ../sass/styles.scss */
+/* line 164, ../sass/styles.scss */
 .btn-menu {
   color: #fff;
   background-color: none;
@@ -222,7 +235,7 @@ header .desctop-menu {
   -webkit-backface-visibility: hidden;
 }
 
-/* line 169, ../sass/styles.scss */
+/* line 179, ../sass/styles.scss */
 .btn-menu span {
   display: block;
   height: 3px;
@@ -232,23 +245,23 @@ header .desctop-menu {
   position: relative;
 }
 
-/* line 177, ../sass/styles.scss */
+/* line 187, ../sass/styles.scss */
 .btn-menu span.first {
   margin-top: 0;
 }
 
-/* line 180, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 .hidden-menu-ticker:checked ~ .btn-menu {
   left: 85%;
 }
 
-/* line 183, ../sass/styles.scss */
+/* line 193, ../sass/styles.scss */
 .hidden-menu-ticker:checked ~ .hidden-menu {
   left: 0;
 }
 
 /*logo*/
-/* line 187, ../sass/styles.scss */
+/* line 197, ../sass/styles.scss */
 .logo {
   max-width: 100%;
   overflow: hidden;
@@ -256,27 +269,27 @@ header .desctop-menu {
   text-align: center;
 }
 
-/* line 193, ../sass/styles.scss */
+/* line 203, ../sass/styles.scss */
 .header-info {
   display: none;
 }
 
 /*dropdown filter*/
-/* line 198, ../sass/styles.scss */
+/* line 208, ../sass/styles.scss */
 .call-us-block {
   float: right;
   margin: 5px 10px 0 0;
   line-height: 33px;
   vertical-align: middle;
 }
-/* line 204, ../sass/styles.scss */
+/* line 214, ../sass/styles.scss */
 .call-us-block img {
   display: inline-block;
   line-height: 33px;
   vertical-align: middle;
 }
 
-/* line 210, ../sass/styles.scss */
+/* line 220, ../sass/styles.scss */
 #info-mobile form input[type='submit'] {
   display: block;
   width: 51px;
@@ -291,7 +304,7 @@ header .desctop-menu {
   border-radius: 2px 3px 3px 2px;
 }
 
-/* line 223, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 .add-client {
   display: inline-block;
   width: 30px;
@@ -305,7 +318,7 @@ header .desctop-menu {
   text-align: center;
 }
 
-/* line 235, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 #info-mobile {
   height: auto;
   background: #f1f1f1;
@@ -322,14 +335,14 @@ header .desctop-menu {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 248, ../sass/styles.scss */
+/* line 258, ../sass/styles.scss */
 #info-mobile a {
   display: block;
   margin: 15px auto;
   text-align: center;
   text-decoration: none;
 }
-/* line 253, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 #info-mobile a .phone {
   color: #00679b;
   font-size: 20px;
@@ -338,7 +351,7 @@ header .desctop-menu {
   text-transform: uppercase;
 }
 
-/* line 263, ../sass/styles.scss */
+/* line 273, ../sass/styles.scss */
 label {
   color: #000;
   float: right;
@@ -348,18 +361,18 @@ label {
   -o-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
-/* line 268, ../sass/styles.scss */
+/* line 278, ../sass/styles.scss */
 label .fa-phone {
   font-size: 23px;
   color: #171c61;
 }
 
-/* line 273, ../sass/styles.scss */
+/* line 283, ../sass/styles.scss */
 input {
   display: none;
 }
 
-/* line 274, ../sass/styles.scss */
+/* line 284, ../sass/styles.scss */
 input:checked + #info-mobile {
   display: none;
 }
@@ -367,14 +380,59 @@ input:checked + #info-mobile {
 /*end dropdown filter*/
 /*end menu*/
 /*---------------------------------------*/
-/* line 283, ../sass/styles.scss */
-.main-page .ticket-form {
-  padding: 10px;
+/* line 289, ../sass/styles.scss */
+.page-navigation {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0 auto 30px;
+  padding: 13px 0;
+  background-color: #009de6;
+  -webkit-box-shadow: inset 35px 194px 19px -191px rgba(0, 0, 0, 0.44);
+  -moz-box-shadow: inset 35px 194px 19px -191px rgba(0, 0, 0, 0.44);
+  box-shadow: inset 35px 194px 19px -191px rgba(0, 0, 0, 0.44);
+}
+/* line 299, ../sass/styles.scss */
+.page-navigation .nav-block {
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 302, ../sass/styles.scss */
+.page-navigation .nav-block a {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+/* line 308, ../sass/styles.scss */
+.page-navigation .nav-block img {
+  float: left;
+}
+/* line 311, ../sass/styles.scss */
+.page-navigation .nav-block h4 {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* line 322, ../sass/styles.scss */
+.main-page,
+.finder-tickets {
+  margin-top: 20px;
+}
+/* line 326, ../sass/styles.scss */
+.main-page .ticket-form,
+.finder-tickets .ticket-form {
+  padding: 30px 10px;
   background-color: #005286;
   border-radius: 10px;
 }
-/* line 288, ../sass/styles.scss */
-.main-page .ticket-form .form-rise-title {
+/* line 331, ../sass/styles.scss */
+.main-page .ticket-form .form-rise-title,
+.finder-tickets .ticket-form .form-rise-title {
   margin: 0 auto;
   text-align: center;
   color: #fff;
@@ -383,9 +441,11 @@ input:checked + #info-mobile {
   line-height: 30px;
   text-transform: uppercase;
 }
-/* line 297, ../sass/styles.scss */
+/* line 340, ../sass/styles.scss */
 .main-page .ticket-form .radio-element-left,
-.main-page .ticket-form .radio-element-right {
+.main-page .ticket-form .radio-element-right,
+.finder-tickets .ticket-form .radio-element-left,
+.finder-tickets .ticket-form .radio-element-right {
   position: relative;
   width: 127px;
   height: 31px;
@@ -394,11 +454,15 @@ input:checked + #info-mobile {
   background-color: #009ae2;
   border: 3px solid #47c2fc;
 }
-/* line 307, ../sass/styles.scss */
+/* line 350, ../sass/styles.scss */
 .main-page .ticket-form .radio-element-left #one-side,
 .main-page .ticket-form .radio-element-left #many-side,
 .main-page .ticket-form .radio-element-right #one-side,
-.main-page .ticket-form .radio-element-right #many-side {
+.main-page .ticket-form .radio-element-right #many-side,
+.finder-tickets .ticket-form .radio-element-left #one-side,
+.finder-tickets .ticket-form .radio-element-left #many-side,
+.finder-tickets .ticket-form .radio-element-right #one-side,
+.finder-tickets .ticket-form .radio-element-right #many-side {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -408,9 +472,11 @@ input:checked + #info-mobile {
   transform: translateY(-50%);
   background-image: linear-gradient(to top, #e9e9e9 0%, #fefefe 100%);
 }
-/* line 318, ../sass/styles.scss */
+/* line 361, ../sass/styles.scss */
 .main-page .ticket-form .radio-element-left label,
-.main-page .ticket-form .radio-element-right label {
+.main-page .ticket-form .radio-element-right label,
+.finder-tickets .ticket-form .radio-element-left label,
+.finder-tickets .ticket-form .radio-element-right label {
   position: absolute;
   right: 5px;
   top: 50%;
@@ -420,21 +486,24 @@ input:checked + #info-mobile {
   font-weight: 400;
   line-height: 10px;
 }
-/* line 329, ../sass/styles.scss */
-.main-page .ticket-form .radio-element-left {
+/* line 372, ../sass/styles.scss */
+.main-page .ticket-form .radio-element-left,
+.finder-tickets .ticket-form .radio-element-left {
   float: left;
 }
-/* line 332, ../sass/styles.scss */
-.main-page .ticket-form .radio-element-right {
+/* line 375, ../sass/styles.scss */
+.main-page .ticket-form .radio-element-right,
+.finder-tickets .ticket-form .radio-element-right {
   float: right;
 }
-/* line 335, ../sass/styles.scss */
-.main-page .ticket-form .text-field {
+/* line 378, ../sass/styles.scss */
+.main-page .ticket-form .text-field,
+.finder-tickets .ticket-form .text-field {
   width: 100%;
   height: 55px;
   margin: 10px auto;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   line-height: 55px;
   padding-left: 17px;
   text-align: left;
@@ -446,29 +515,422 @@ input:checked + #info-mobile {
   line-height: 55px;
   text-transform: uppercase;
 }
-/* line 353, ../sass/styles.scss */
-.main-page .ticket-form .date #datepicker {
-  width: 192px;
+/* line 395, ../sass/styles.scss */
+.main-page .ticket-form .date,
+.finder-tickets .ticket-form .date {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 58px;
+}
+/* line 399, ../sass/styles.scss */
+.main-page .ticket-form .date #datepicker1,
+.main-page .ticket-form .date #datepicker2,
+.finder-tickets .ticket-form .date #datepicker1,
+.finder-tickets .ticket-form .date #datepicker2 {
+  float: left;
+  width: 60%;
   height: 56px;
+  padding-left: 15px;
   color: grey;
   font-size: 25px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 13px;
   text-transform: uppercase;
+  border: none;
   background-image: linear-gradient(to top, #d7d7d7 0%, #f3f3f3 100%);
   border-radius: 10px;
 }
-/* line 366, ../sass/styles.scss */
-.main-page input {
+/* line 415, ../sass/styles.scss */
+.main-page .ticket-form .date img,
+.finder-tickets .ticket-form .date img {
+  float: right;
+}
+/* line 419, ../sass/styles.scss */
+.main-page .ticket-form .ather-date,
+.finder-tickets .ticket-form .ather-date {
+  clear: both;
+  margin: 15px auto;
+  text-align: center;
+}
+/* line 423, ../sass/styles.scss */
+.main-page .ticket-form .ather-date .simbol,
+.finder-tickets .ticket-form .ather-date .simbol {
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  line-height: 18px;
+  font-weight: 700;
+}
+/* line 430, ../sass/styles.scss */
+.main-page .ticket-form .ather-date .simbol-sign,
+.finder-tickets .ticket-form .ather-date .simbol-sign {
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+  line-height: 18px;
+  font-weight: 400;
+}
+/* line 438, ../sass/styles.scss */
+.main-page .ticket-form .ather-date input,
+.finder-tickets .ticket-form .ather-date input {
+  display: inline-block;
+  width: 40px;
+  height: 38px;
+  color: grey;
+  color: grey;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 10px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #d4d4d4 0%, whitesmoke 100%);
+}
+/* line 453, ../sass/styles.scss */
+.main-page .ticket-form .where-input,
+.finder-tickets .ticket-form .where-input {
+  width: 100%;
+  height: 55px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 10px;
+  line-height: 55px;
+  padding-left: 17px;
+  text-align: left;
+  color: grey;
+  box-sizing: border-box;
+  font-size: 25px;
+  font-weight: 700;
+  background-image: linear-gradient(to top, #d7d7d7 0%, #f3f3f3 100%);
+  line-height: 55px;
+  text-transform: uppercase;
+}
+/* line 471, ../sass/styles.scss */
+.main-page .submit-button,
+.finder-tickets .submit-button {
+  width: 268px;
+  height: 56px;
+  margin: 0 auto;
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 56px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+}
+/* line 485, ../sass/styles.scss */
+.main-page input,
+.finder-tickets input {
   display: block;
 }
 
-/* line 373, ../sass/styles.scss */
+/* line 491, ../sass/styles.scss */
+.finder-tickets .sity-marker {
+  box-sizing: border-box;
+  width: 100%;
+}
+/* line 494, ../sass/styles.scss */
+.finder-tickets .sity-marker .text-field-arrow {
+  float: left;
+  width: 85%;
+}
+/* line 498, ../sass/styles.scss */
+.finder-tickets .sity-marker img {
+  float: right;
+  margin: 29px 0;
+}
+/* line 503, ../sass/styles.scss */
+.finder-tickets .ather-date {
+  margin: 0 auto 15px !important;
+}
+
+/* line 508, ../sass/styles.scss */
+.hot-reis {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 513, ../sass/styles.scss */
+.hot-reis article {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: linear-gradient(to top, #d2d2d2 0%, #ebebeb 100%);
+}
+/* line 522, ../sass/styles.scss */
+.hot-reis article .reis-title {
+  padding-bottom: 20px;
+  text-align: left;
+  color: #00679b;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 13px;
+  text-transform: uppercase;
+  background: url("../images/dotted-line.png") no-repeat bottom;
+  background-size: contain;
+}
+/* line 532, ../sass/styles.scss */
+.hot-reis article .reis-title span {
+  text-transform: lowercase;
+}
+/* line 536, ../sass/styles.scss */
+.hot-reis article .reis-direction {
+  margin: 13px 0 18px;
+  text-align: left;
+  color: #717171;
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 25px;
+}
+/* line 543, ../sass/styles.scss */
+.hot-reis article .reis-direction .sub-direction {
+  display: block;
+  font-size: 16px;
+}
+/* line 548, ../sass/styles.scss */
+.hot-reis article .date-info {
+  text-align: left;
+}
+/* line 550, ../sass/styles.scss */
+.hot-reis article .date-info .date-title {
+  color: #717171;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 400;
+}
+/* line 556, ../sass/styles.scss */
+.hot-reis article .date-info .date-view {
+  color: #717171;
+  font-size: 18px;
+  line-height: 17px;
+  font-weight: 400;
+  font-weight: 700;
+}
+/* line 564, ../sass/styles.scss */
+.hot-reis article .more {
+  float: right;
+  margin: 20px 0 0;
+  color: #00679b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+/* line 575, ../sass/styles.scss */
+.reis-list {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 580, ../sass/styles.scss */
+.reis-list article {
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: linear-gradient(to top, #d2d2d2 0%, #ebebeb 100%);
+}
+/* line 589, ../sass/styles.scss */
+.reis-list article .reis-title,
+.reis-list article .reis-title-back {
+  padding-bottom: 20px;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+  color: #00679b;
+  background: url("../images/dotted-line.png") no-repeat bottom;
+  background-size: contain;
+}
+/* line 598, ../sass/styles.scss */
+.reis-list article .reis-title img,
+.reis-list article .reis-title-back img {
+  float: left;
+  margin: 0 6px 0 0;
+}
+/* line 601, ../sass/styles.scss */
+.reis-list article .reis-title .ticket-date,
+.reis-list article .reis-title-back .ticket-date {
+  color: #0078b6;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 19px;
+  vertical-align: top;
+  text-transform: uppercase;
+}
+/* line 609, ../sass/styles.scss */
+.reis-list article .reis-title .way-direction,
+.reis-list article .reis-title-back .way-direction {
+  display: inline-block;
+  float: left;
+  color: #717171;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 13px;
+}
+/* line 618, ../sass/styles.scss */
+.reis-list article .reis-title-back {
+  padding-bottom: 0;
+  background: none;
+}
+/* line 622, ../sass/styles.scss */
+.reis-list article .ticket-reis-direction {
+  margin: 13px 0 19px;
+  text-align: left;
+  color: #717171;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+/* line 629, ../sass/styles.scss */
+.reis-list article .ticket-reis-direction .start-end-direction {
+  font-weight: 400;
+}
+/* line 634, ../sass/styles.scss */
+.reis-list article .ticket-deteils .ticket-price {
+  float: left;
+  color: #0078b6;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+/* line 641, ../sass/styles.scss */
+.reis-list article .ticket-deteils .ticket-price span {
+  text-transform: lowercase;
+}
+/* line 645, ../sass/styles.scss */
+.reis-list article .ticket-deteils .more-details {
+  float: right;
+  margin: 10px 0 0;
+  color: #00679b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  text-decoration: none;
+}
+/* line 656, ../sass/styles.scss */
+.reis-list .articles-navigation {
+  margin: 13px auto 20px;
+  text-align: center;
+}
+/* line 659, ../sass/styles.scss */
+.reis-list .articles-navigation li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 662, ../sass/styles.scss */
+.reis-list .articles-navigation li:first-child {
+  margin-left: 0;
+}
+/* line 665, ../sass/styles.scss */
+.reis-list .articles-navigation li:last-child {
+  margin-right: 0;
+}
+/* line 668, ../sass/styles.scss */
+.reis-list .articles-navigation li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #939393;
+}
+/* line 674, ../sass/styles.scss */
+.reis-list .articles-navigation li a:hover {
+  color: #00679b;
+}
+/* line 678, ../sass/styles.scss */
+.reis-list .articles-navigation li .active-item {
+  color: #00679b;
+}
+
+/* line 686, ../sass/styles.scss */
+.login-form .login-block {
+  width: 100%;
+  height: auto;
+  margin-bottom: 31px;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #009de6;
+}
+/* line 696, ../sass/styles.scss */
+.login-form .login-block .login-title {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+/* line 704, ../sass/styles.scss */
+.login-form .login-block .login-main {
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 708, ../sass/styles.scss */
+.login-form .login-block .login-main input {
+  display: block;
+  width: 100%;
+  height: 43px;
+  margin: 15px auto;
+  padding-left: 20px;
+  color: #8c8c8c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 13px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to top, #ebebeb 0%, white 57%, white 100%);
+}
+/* line 723, ../sass/styles.scss */
+.login-form .login-block .login-main .get-password {
+  float: left;
+  width: 40%;
+  margin: 0 0 0 19px;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+}
+/* line 734, ../sass/styles.scss */
+.login-form .login-block .login-main .login-batton {
+  float: right;
+  width: 116px;
+  height: 43px;
+  margin: 0 16px 0 0;
+  padding-left: 0;
+  color: #005286;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 15px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to top, #d4d4d4 0%, #ededed 100%);
+}
+
+/* line 753, ../sass/styles.scss */
 footer {
   padding: 34px 0 25px;
   background: url(../images/footer-bg.jpg) repeat-x;
 }
-/* line 376, ../sass/styles.scss */
+/* line 756, ../sass/styles.scss */
 footer .footer-content {
   max-width: 218px;
   margin: 0 auto 14px;
@@ -480,13 +942,13 @@ footer .footer-content {
   font-style: italic;
   text-transform: uppercase;
 }
-/* line 387, ../sass/styles.scss */
+/* line 767, ../sass/styles.scss */
 footer span {
   display: block;
   text-transform: none;
   font-weight: 400;
 }
-/* line 392, ../sass/styles.scss */
+/* line 772, ../sass/styles.scss */
 footer .footer-phone {
   display: block;
   margin: 20px auto;
@@ -496,7 +958,7 @@ footer .footer-phone {
   font-weight: 700;
   line-height: 20px;
 }
-/* line 401, ../sass/styles.scss */
+/* line 781, ../sass/styles.scss */
 footer .copyright {
   margin: 18px auto 0;
   text-align: center;
@@ -505,12 +967,12 @@ footer .copyright {
   font-weight: 400;
   line-height: 20px;
 }
-/* line 409, ../sass/styles.scss */
+/* line 789, ../sass/styles.scss */
 footer .copyright a {
   color: #636363;
   text-decoration: none;
 }
-/* line 413, ../sass/styles.scss */
+/* line 793, ../sass/styles.scss */
 footer .copyright a:hover {
   text-decoration: underline;
 }

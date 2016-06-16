@@ -80,7 +80,17 @@
 	        </h1>
         </div>
 	</header>
-	<section class="main-page">
+	<section class="page-navigation">
+		<div class="wrapper">
+        	<div class="nav-block">
+				<a href="#">
+					<img src="images/arrow-left.png" alt="arrow-left">
+        			<h4>Пошук рейсу</h4>
+				</a>
+        	</div>
+		</div>
+	</section>
+	<section class="finder-tickets">
 		<div class="wrapper">
 			<form class="ticket-form" action="#" method="post">
 				<h2 class="form-rise-title">Пошук рейсу</h2>
@@ -92,50 +102,135 @@
 					<input type="radio" id="many-side" name="bass-ticket" value="many-side" checked="checked">
 					<label for="many-side">В обидві сторони</label>
 				</p>
-				<input class="text-field" type="text" name="from-ticket" placeholder="Звідки">
+				<div class="sity-marker">
+					<input class="text-field text-field-arrow" type="text" name="from-ticket" placeholder="Звідки">
+					<img src="images/input-arrow-right.png" alt="input-arrow-right">
+				</div>
 				<input class="text-field" type="text" name="where-ticket" placeholder="Куди">
 				<p class="date"> 
 					<input type="text" id="datepicker1" name="datepicker1" value="">
 					<img src="images/calendar.png" alt="calendar">
 				</p>
+				<br>
+				<div class="sity-marker">
+					<input class="text-field text-field-arrow" type="text" name="from-ticket" placeholder="Звідки">
+					<img src="images/input-arrow-left.png" alt="input-arrow-left">
+				</div>
+				<input class="text-field" type="text" name="where-ticket" placeholder="Куди">
+				<p class="date"> 
+					<input type="text" id="datepicker2" name="datepicker1" value="">
+					<img src="images/calendar.png" alt="calendar">
+				</p>
+				<br>
 				<div class="ather-date">
 					<span class="simbol">+ / -</span>
 					<input type="text" name="ather-date-number">
 					<span class="simbol-sign">дня</span>
 				</div>
-				<input class="where-input" type="text" name="ather-side" placeholder="Куди">
-				<p class="date"> 
-					<input type="text" id="datepicker2" name="datepicker2" value="">
-					<img src="images/calendar.png" alt="calendar">
-				</p>
-				<input class="submit-button" type="submit" value="пошук">
+				<input class="submit-button" type="submit" value="навий пошук">
 			</form>
 		</div>
 	</section>
-	<section class="hot-reis">
+	<section class="reis-list">
 		<div class="wrapper">
 			<article>
-				<h2 class="reis-title">HOT <span>рейс</span></h2>	
-				<h3 class="reis-direction">Чернівці - Мілан
-				<span class="sub-direction">через Мукачево, Чоп, Будапешт</span>
+				<h2 class="reis-title">
+					<img src="images/ticket-arrow-right.png" alt="ticket-arrow-right">
+					<span class="way-direction">туди</span>
+					<span class="ticket-date">24.04.2016</span>
+				</h2>	
+				<h3 class="ticket-reis-direction">
+					<span class="stsrt-end-direction">Бориспіль </span>
+					- Київ - Чернівці
 				</h3>
-				<p class="date-info">
-					<span class="date-title">Виїзд:</span>
-					<span class="date-view">22.04.2016</span>
-				</p>
-				<a class="more" href="#">детальніше <img src="images/more.png" alt="more"></a>
+				<h2 class="reis-title-back">
+					<img src="images/ticket-arrow-left.png" alt="ticket-arrow-right">
+					<span class="way-direction">назад</span>
+					<span class="ticket-date">24.04.2016</span>
+				</h2>	
+				<h3 class="ticket-reis-direction">
+					<span class="start-end-direction">Чернівці - Київ - </span>
+					Бориспіль
+				</h3>
+				<div class="ticket-deteils">
+					<span class="ticket-price">550 <span>грн.</span></span>
+					<a class="more-details" href="#">детальніше <img src="images/more.png" alt="more"></a>
+				</div>
 			</article>
 			<article>
-				<h2 class="reis-title">HOT <span>рейс</span></h2>	
-				<h3 class="reis-direction">Чернівці - Мілан
-				<span class="sub-direction">через Мукачево, Чоп, Будапешт</span>
+				<h2 class="reis-title">
+					<img src="images/ticket-arrow-right.png" alt="ticket-arrow-right">
+					<span class="way-direction">туди</span>
+					<span class="ticket-date">24.04.2016</span>
+				</h2>	
+				<h3 class="ticket-reis-direction">
+					<span class="stsrt-end-direction">Бориспіль </span>
+					- Київ - Чернівці
 				</h3>
-				<p class="date-info">
-					<span class="date-title">Виїзд:</span>
-					<span class="date-view">22.04.2016</span>
-				</p>
-				<a class="more" href="#">детальніше <img src="images/more.png" alt="more"></a>
+				<h2 class="reis-title-back">
+					<img src="images/ticket-arrow-left.png" alt="ticket-arrow-right">
+					<span class="way-direction">назад</span>
+					<span class="ticket-date">24.04.2016</span>
+				</h2>	
+				<h3 class="ticket-reis-direction">
+					<span class="start-end-direction">Чернівці - Київ - </span>
+					Бориспіль
+				</h3>
+				<div class="ticket-deteils">
+					<span class="ticket-price">550 <span>грн.</span></span>
+					<a class="more-details" href="#">детальніше <img src="images/more.png" alt="more"></a>
+				</div>
 			</article>
+			<article>
+				<h2 class="reis-title">
+					<img src="images/ticket-arrow-right.png" alt="ticket-arrow-right">
+					<span class="way-direction">туди</span>
+					<span class="ticket-date">24.04.2016</span>
+				</h2>	
+				<h3 class="ticket-reis-direction">
+					<span class="stsrt-end-direction">Бориспіль </span>
+					- Київ - Чернівці
+				</h3>
+				<h2 class="reis-title-back">
+					<img src="images/ticket-arrow-left.png" alt="ticket-arrow-right">
+					<span class="way-direction">назад</span>
+					<span class="ticket-date">24.04.2016</span>
+				</h2>	
+				<h3 class="ticket-reis-direction">
+					<span class="start-end-direction">Чернівці - Київ - </span>
+					Бориспіль
+				</h3>
+				<div class="ticket-deteils">
+					<span class="ticket-price">550 <span>грн.</span></span>
+					<a class="more-details" href="#">детальніше <img src="images/more.png" alt="more"></a>
+				</div>
+			</article>
+			<ul class="articles-navigation">
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#">6</a>
+				</li>
+				<li>
+					<a href="#">7</a>
+				</li>
+				<li>
+					<a href="#">8</a>
+				</li>
+			</ul>
 		</div>
 	</section>
 	<footer>
@@ -185,5 +280,18 @@
 	    $("#datepicker2").datepicker($.datepicker.regional["ru"]);
 	});
 	</script>
+	<!-- This sourse fot active navigation. Uncomment this code fot activete navigation pagination -->
+	<!-- <script>
+		$(function () {
+	        $('.articles-navigation li a').each(function () {
+	            var location = window.location.href;
+	            var link = this.href;
+	            var result = location.match(link);
+	            if(result) {
+	            $(this).addClass('active-item');
+	            }
+	        });
+	    });
+	</script> -->
 </body>
 </html>

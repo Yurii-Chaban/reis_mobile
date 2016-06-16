@@ -42,7 +42,15 @@
     font-style: normal;
 
 }
-input[type="text"]:focus { outline: none; }
+input {
+    cursor: pointer;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:focus,
+input[type="radio"]:focus {
+    outline: none;
+}
 
 $text-color: #636363;
 
@@ -68,6 +76,8 @@ body {
 }
 
 header {
+    background-color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 1, 0.75);
     .desctop-menu {
         display: none;
     }
@@ -275,13 +285,46 @@ header {
   /*end dropdown filter*/
 /*end menu*/
 /*---------------------------------------*/
-
+// page-navigation
+.page-navigation {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0 auto 30px;
+    padding: 13px 0;
+    background-color: #009de6;
+    -webkit-box-shadow: inset 35px 194px 19px -191px rgba(0,0,0,0.44);
+    -moz-box-shadow: inset 35px 194px 19px -191px rgba(0,0,0,0.44);
+    box-shadow: inset 35px 194px 19px -191px rgba(0,0,0,0.44);
+    .nav-block {
+        width: 100%;
+        margin: 0 auto;
+        a {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+        }
+        img {
+            float: left 
+        }
+        h4 {
+            display: inline-block;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
+    }
+}
 // main-page
-.main-page {
-
+.main-page,
+.finder-tickets {
+    margin-top: 20px;
 
     .ticket-form {
-        padding: 10px;
+        padding: 30px 10px;
         background-color: #005286;
         border-radius: 10px;
 
@@ -337,7 +380,7 @@ header {
             height: 55px;
             margin: 10px auto;
             border: none;
-            border-radius: 20px;
+            border-radius: 10px;
             line-height: 55px;
             padding-left: 17px;
             text-align: left;
@@ -350,24 +393,361 @@ header {
             text-transform: uppercase;
         }
         .date {
-            #datepicker {
-                width: 192px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 58px;
+            #datepicker1,
+            #datepicker2 {
+                float: left;
+                width: 60%;
                 height: 56px;
+                padding-left: 15px;
                 color: grey;
                 font-size: 25px;
                 font-weight: 700;
-                line-height: 56px;
+                line-height: 13px;
                 text-transform: uppercase;
+                border: none;
                 background-image: linear-gradient(to top, #d7d7d7 0%, #f3f3f3 100%);
                 border-radius: 10px;
+
+            }
+            img {
+                float: right;
             }
         }
+        .ather-date {
+            clear: both;
+            margin: 15px auto;
+            text-align: center;
+            .simbol {
+                display: inline-block;
+                color: #fff;
+                font-size: 25px;
+                line-height: 18px;
+                font-weight: 700;
+            }
+            .simbol-sign {
+                display: inline-block;
+                color: #fff;
+                font-size: 25px;
+                line-height: 18px;
+                font-weight: 400;
+            }
+
+            input {
+                display: inline-block;
+                width: 40px;
+                height: 38px;
+                color: grey;
+                color: grey;
+                font-size: 25px;
+                font-weight: 400;
+                text-align: center;
+                line-height: 10px;
+                border: none;
+                border-radius: 10px;
+                background-image: linear-gradient(to top, #d4d4d4 0%, whitesmoke 100%);
+            }
+        }
+        .where-input {
+            width: 100%;
+            height: 55px;
+            margin: 10px auto;
+            border: none;
+            border-radius: 10px;
+            line-height: 55px;
+            padding-left: 17px;
+            text-align: left;
+            color: grey;
+            box-sizing: border-box;
+            font-size: 25px;
+            font-weight: 700;
+            background-image: linear-gradient(to top, #d7d7d7 0%, #f3f3f3 100%);
+            line-height: 55px;
+            text-transform: uppercase;
+        }
+    }
+    .submit-button {
+        width: 268px;
+        height: 56px;
+        margin: 0 auto;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 56px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 30px;
+        background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
     }
     input {
         display: block;
     }
 }
+// .finder-tickets 
+.finder-tickets  {
+    .sity-marker {
+        box-sizing: border-box;
+        width: 100%;
+        .text-field-arrow {
+            float: left;
+            width: 85%;
+        }   
+        img {
+            float: right;
+            margin: 29px 0;
+        }
+    }
+    .ather-date {
+        margin: 0 auto 15px !important;
+    }
+}
+// hot-reis 
+.hot-reis {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    article {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 20px;
+        background-image: linear-gradient(to top, #d2d2d2 0%, #ebebeb 100%);
+        .reis-title {
+            padding-bottom: 20px;
+            text-align: left;
+            color: #00679b;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 13px;
+            text-transform: uppercase;
+            background: url('../images/dotted-line.png') no-repeat bottom;
+            background-size: contain;
+            span {
+                text-transform: lowercase;
+            }
+        }
+        .reis-direction {
+            margin: 13px 0 18px;
+            text-align: left;
+            color: #717171;
+            font-weight: 400;
+            line-height: 22px;
+            font-size: 25px;
+            .sub-direction {
+                display: block;
+                font-size: 16px;
+            }
+        }
+        .date-info {
+            text-align: left;
+            .date-title {
+                color: #717171;
+                font-size: 18px;
+                line-height: 17px;
+                font-weight: 400;
+            }
+            .date-view {
+                color: #717171;
+                font-size: 18px;
+                line-height: 17px;
+                font-weight: 400;
+                font-weight: 700;
+            }
+        }
+        .more {
+            float: right;
+            margin: 20px 0 0;
+            color: #00679b;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 17px;
+            text-decoration: none;
+        }
+    }
+}
+.reis-list {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    article {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 20px;
+        background-image: linear-gradient(to top, #d2d2d2 0%, #ebebeb 100%);
+        .reis-title,
+        .reis-title-back {
+            padding-bottom: 20px;
+            text-align: center;
+            line-height: 20px;
+            vertical-align: middle;
+            color: #00679b;
+            background: url('../images/dotted-line.png') no-repeat bottom;
+            background-size: contain;
+            img {
+                float: left;
+                margin: 0 6px 0 0;            }
+            .ticket-date {
+                color: #0078b6;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 19px;
+                vertical-align: top;
+                text-transform: uppercase;
+            }
+            .way-direction {
+                display: inline-block;
+                float: left;
+                color: #717171;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 13px;
+            }
+        }
+        .reis-title-back {
+            padding-bottom: 0;
+            background: none;
+        }
+        .ticket-reis-direction {
+            margin: 13px 0 19px;
+            text-align: left;
+            color: #717171;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 30px;
+            .start-end-direction {
+                font-weight: 400;
+            }
+        }
+        .ticket-deteils {
+            .ticket-price {
+                float: left;
+                color: #0078b6;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 35px;
+                text-transform: uppercase;
+                span {
+                    text-transform: lowercase;
+                }
+            }
+            .more-details {
+                float: right;
+                margin: 10px 0 0;
+                color: #00679b;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 17px;
+                text-decoration: none;
+            }
+        }
+    }
+    .articles-navigation {
+        margin: 13px auto 20px;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            &:first-child {
+                margin-left: 0;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                color: #939393;
+                &:hover {
+                    color: #00679b;
+                }
+            }
+            .active-item {
+                color: #00679b;
+            }
+        }
+    }
+}
+// login-form
+.login-form {
+    .login-block {
+        width: 100%;
+        height: auto;
+        margin-bottom: 31px;
+        padding: 15px 10px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10px;
+        background-color: #009de6;
 
+        .login-title {
+            margin: 0 auto;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            text-transform: uppercase;
+        }
+        .login-main {
+            width: 100%;
+            box-sizing: border-box;
+
+            input {
+                display: block;
+                width: 100%;
+                height: 43px;
+                margin: 15px auto;
+                padding-left: 20px;
+                color: #8c8c8c;
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 13px;
+                box-sizing: border-box;
+                border: none;
+                border-radius: 30px;
+                background-image: linear-gradient(to top, #ebebeb 0%, white 57%, white 100%);
+            }
+            .get-password {
+                float: left;
+                width: 40%;
+                margin: 0 0 0 19px;
+                text-align: left;
+                text-decoration: none;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 15px;
+            }
+            .login-batton {
+                float: right;
+                width: 116px;
+                height: 43px;
+                margin: 0 16px 0 0;
+                padding-left: 0;
+                color: #005286;
+                font-size: 18px;
+                font-weight: 700;
+                text-align: center;
+                line-height: 15px;
+                text-transform: uppercase;
+                background-image: linear-gradient(to top, #d4d4d4 0%, #ededed 100%);
+            }
+        }   
+    }
+}
 
 // footer
 footer {

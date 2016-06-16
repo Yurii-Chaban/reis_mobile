@@ -80,62 +80,27 @@
 	        </h1>
         </div>
 	</header>
-	<section class="main-page">
+	<section class="page-navigation">
 		<div class="wrapper">
-			<form class="ticket-form" action="#" method="post">
-				<h2 class="form-rise-title">Пошук рейсу</h2>
-				<p class="radio-element-left">
-					<input type="radio" id="one-side" name="bass-ticket" value="one-side">
-					<label for="one-side">В одну сторону</label>
-				</p>
-				<p class="radio-element-right">
-					<input type="radio" id="many-side" name="bass-ticket" value="many-side" checked="checked">
-					<label for="many-side">В обидві сторони</label>
-				</p>
-				<input class="text-field" type="text" name="from-ticket" placeholder="Звідки">
-				<input class="text-field" type="text" name="where-ticket" placeholder="Куди">
-				<p class="date"> 
-					<input type="text" id="datepicker1" name="datepicker1" value="">
-					<img src="images/calendar.png" alt="calendar">
-				</p>
-				<div class="ather-date">
-					<span class="simbol">+ / -</span>
-					<input type="text" name="ather-date-number">
-					<span class="simbol-sign">дня</span>
-				</div>
-				<input class="where-input" type="text" name="ather-side" placeholder="Куди">
-				<p class="date"> 
-					<input type="text" id="datepicker2" name="datepicker2" value="">
-					<img src="images/calendar.png" alt="calendar">
-				</p>
-				<input class="submit-button" type="submit" value="пошук">
-			</form>
+        	<div class="nav-block">
+				<a href="#">
+					<img src="images/arrow-left.png" alt="arrow-left">
+        			<h4>Перегляд замовлення</h4>
+				</a>
+        	</div>
 		</div>
 	</section>
-	<section class="hot-reis">
+	<section class="login-form">
 		<div class="wrapper">
-			<article>
-				<h2 class="reis-title">HOT <span>рейс</span></h2>	
-				<h3 class="reis-direction">Чернівці - Мілан
-				<span class="sub-direction">через Мукачево, Чоп, Будапешт</span>
-				</h3>
-				<p class="date-info">
-					<span class="date-title">Виїзд:</span>
-					<span class="date-view">22.04.2016</span>
-				</p>
-				<a class="more" href="#">детальніше <img src="images/more.png" alt="more"></a>
-			</article>
-			<article>
-				<h2 class="reis-title">HOT <span>рейс</span></h2>	
-				<h3 class="reis-direction">Чернівці - Мілан
-				<span class="sub-direction">через Мукачево, Чоп, Будапешт</span>
-				</h3>
-				<p class="date-info">
-					<span class="date-title">Виїзд:</span>
-					<span class="date-view">22.04.2016</span>
-				</p>
-				<a class="more" href="#">детальніше <img src="images/more.png" alt="more"></a>
-			</article>
+				<div class="login-block">
+					<h2 class="login-title">перегляд <br>замовлення</h2>
+					<form class="login-main" method="post" action="">
+                        <input type="text" value="" id="login" name="email" placeholder="E-mail">
+                        <input type="password" value="" id="password" name="password" placeholder="Пароль">
+                        <a class="get-password" href="#">Отримати <br>пароль</a>
+                        <input class="login-batton" type="submit" value="вхід" id="login_buttton" name="login_buttton">
+                    </form>
+				</div>
 		</div>
 	</section>
 	<footer>
