@@ -941,11 +941,122 @@ input:checked + #info-mobile {
   border: 1px solid #d9d9d9;
   border-radius: 26px;
 }
-/* line 767, ../sass/styles.scss */
-.buss-rent #choice-form input {
+/* line 765, ../sass/styles.scss */
+.buss-rent .rent-content .buss-info {
+  margin-top: 20px;
+  color: #006598;
+  font-size: 25px;
+  font-weight: 400;
+}
+/* line 770, ../sass/styles.scss */
+.buss-rent .rent-content .buss-info .pre-title {
+  line-height: 30px;
+}
+/* line 773, ../sass/styles.scss */
+.buss-rent .rent-content .buss-info .buss-model {
+  display: block;
+  line-height: 40px;
+}
+/* line 777, ../sass/styles.scss */
+.buss-rent .rent-content .buss-info .buss-region {
+  line-height: 40px;
+}
+/* line 779, ../sass/styles.scss */
+.buss-rent .rent-content .buss-info .buss-region span {
+  text-transform: uppercase;
+}
+/* line 786, ../sass/styles.scss */
+.buss-rent .rent-content .bus-specifications li,
+.buss-rent .rent-content .tarif-list li {
   display: block;
 }
-/* line 771, ../sass/styles.scss */
+/* line 789, ../sass/styles.scss */
+.buss-rent .rent-content .bus-specifications li h4,
+.buss-rent .rent-content .tarif-list li h4 {
+  display: inline-block;
+  font-size: 18px;
+  color: #757575;
+  line-height: 35px;
+  font-weight: 400;
+}
+/* line 796, ../sass/styles.scss */
+.buss-rent .rent-content .bus-specifications li span,
+.buss-rent .rent-content .tarif-list li span {
+  font-size: 18px;
+  color: #757575;
+  line-height: 35px;
+  font-weight: 600;
+}
+/* line 804, ../sass/styles.scss */
+.buss-rent .rent-content .tarif-title {
+  color: #006598;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+}
+/* line 810, ../sass/styles.scss */
+.buss-rent .rent-content .contacts-for-buss {
+  margin: 20px auto;
+  padding: 24px 0;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+}
+/* line 815, ../sass/styles.scss */
+.buss-rent .rent-content .contacts-for-buss .title-contact {
+  color: #006598;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+}
+/* line 822, ../sass/styles.scss */
+.buss-rent .rent-content .contacts-for-buss .description-contact li {
+  display: block;
+  margin: 10px 0;
+  color: #006598;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+/* line 833, ../sass/styles.scss */
+.buss-rent .rent-content .assessment .assessment-title {
+  color: #006598;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+/* line 842, ../sass/styles.scss */
+.buss-rent .assessment-condition {
+  margin-bottom: 15px;
+  color: #006598;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 40px;
+}
+/* line 849, ../sass/styles.scss */
+.buss-rent .assessment-sign {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+/* line 857, ../sass/styles.scss */
+.buss-rent #choice-form .choice-button {
+  display: block;
+  width: 268px;
+  height: 56px;
+  margin: 20px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 13px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to top, #006396 0%, #009be3 100%);
+}
+/* line 873, ../sass/styles.scss */
 .buss-rent #choice-form .star-rating {
   font-size: 0;
   white-space: nowrap;
@@ -957,7 +1068,7 @@ input:checked + #info-mobile {
   background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=");
   background-size: contain;
 }
-/* line 782, ../sass/styles.scss */
+/* line 884, ../sass/styles.scss */
 .buss-rent #choice-form .star-rating i {
   opacity: 0;
   position: absolute;
@@ -969,7 +1080,7 @@ input:checked + #info-mobile {
   background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=");
   background-size: contain;
 }
-/* line 794, ../sass/styles.scss */
+/* line 896, ../sass/styles.scss */
 .buss-rent #choice-form .star-rating input {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -982,37 +1093,42 @@ input:checked + #info-mobile {
   z-index: 2;
   position: relative;
 }
-/* line 805, ../sass/styles.scss */
+/* line 907, ../sass/styles.scss */
 .buss-rent #choice-form .star-rating input:hover + i, .buss-rent #choice-form .star-rating input:checked + i {
   opacity: 1;
 }
-/* line 810, ../sass/styles.scss */
+/* line 912, ../sass/styles.scss */
 .buss-rent #choice-form .star-rating i ~ i {
   width: 40%;
 }
-/* line 813, ../sass/styles.scss */
+/* line 915, ../sass/styles.scss */
 .buss-rent #choice-form .star-rating i ~ i ~ i {
   width: 60%;
 }
-/* line 816, ../sass/styles.scss */
+/* line 918, ../sass/styles.scss */
 .buss-rent #choice-form .star-rating i ~ i ~ i ~ i {
   width: 80%;
 }
-/* line 819, ../sass/styles.scss */
+/* line 921, ../sass/styles.scss */
 .buss-rent #choice-form .star-rating i ~ i ~ i ~ i ~ i {
   width: 100%;
 }
-/* line 827, ../sass/styles.scss */
+/* line 929, ../sass/styles.scss */
 .buss-rent #choice-form .choice {
-  position: relativeb;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
-  text-align: center;
-  padding: 20px;
   display: block;
+  padding: 20px;
+  text-align: center;
+  color: #006598;
+  font-size: 131px;
+  font-weight: 400;
+  line-height: 130px;
+  text-transform: uppercase;
 }
-/* line 838, ../sass/styles.scss */
+/* line 945, ../sass/styles.scss */
 .buss-rent #choice-form *, .buss-rent #choice-form ::after, .buss-rent #choice-form ::before {
   height: 100%;
   padding: 0;
@@ -1021,26 +1137,13 @@ input:checked + #info-mobile {
   text-align: center;
   vertical-align: middle;
 }
-/* line 846, ../sass/styles.scss */
-.buss-rent #choice-form body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",  Helvetica, Arial, "Lucida Grande", sans-serif;
-}
-/* line 849, ../sass/styles.scss */
-.buss-rent #choice-form body::before {
-  height: 100%;
-  content: '';
-  width: 0;
-  background: red;
-  vertical-align: middle;
-  display: inline-block;
-}
 
-/* line 861, ../sass/styles.scss */
+/* line 956, ../sass/styles.scss */
 footer {
   padding: 34px 0 25px;
   background: url(../images/footer-bg.jpg) repeat-x;
 }
-/* line 864, ../sass/styles.scss */
+/* line 959, ../sass/styles.scss */
 footer .footer-content {
   max-width: 218px;
   margin: 0 auto 14px;
@@ -1052,13 +1155,13 @@ footer .footer-content {
   font-style: italic;
   text-transform: uppercase;
 }
-/* line 875, ../sass/styles.scss */
+/* line 970, ../sass/styles.scss */
 footer span {
   display: block;
   text-transform: none;
   font-weight: 400;
 }
-/* line 880, ../sass/styles.scss */
+/* line 975, ../sass/styles.scss */
 footer .footer-phone {
   display: block;
   margin: 20px auto;
@@ -1068,7 +1171,7 @@ footer .footer-phone {
   font-weight: 700;
   line-height: 20px;
 }
-/* line 889, ../sass/styles.scss */
+/* line 984, ../sass/styles.scss */
 footer .copyright {
   margin: 18px auto 0;
   text-align: center;
@@ -1077,12 +1180,12 @@ footer .copyright {
   font-weight: 400;
   line-height: 20px;
 }
-/* line 897, ../sass/styles.scss */
+/* line 992, ../sass/styles.scss */
 footer .copyright a {
   color: #636363;
   text-decoration: none;
 }
-/* line 901, ../sass/styles.scss */
+/* line 996, ../sass/styles.scss */
 footer .copyright a:hover {
   text-decoration: underline;
 }

@@ -761,13 +761,115 @@ header {
         background-image: linear-gradient(to top, #d9d9d9 0%, #efefef 100%);
         border: 1px solid #d9d9d9;
         border-radius: 26px;
+
+        .buss-info {
+            margin-top: 20px;
+            color: #006598;
+            font-size: 25px;
+            font-weight: 400;
+            .pre-title {
+                line-height: 30px;
+            }
+            .buss-model {
+                display: block;
+                line-height: 40px;
+            }
+            .buss-region {
+                line-height: 40px;
+                span {
+                    text-transform: uppercase;
+                }
+            }            
+        }
+        .bus-specifications,
+        .tarif-list {
+            li {
+                display: block;
+                
+                h4 {
+                    display: inline-block;
+                    font-size: 18px;
+                    color: #757575;
+                    line-height: 35px;
+                    font-weight: 400;
+                }
+                span {
+                    font-size: 18px;
+                    color: #757575;
+                    line-height: 35px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .tarif-title {
+            color: #006598;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 40px;
+        }
+        .contacts-for-buss {
+            margin: 20px auto;
+            padding: 24px 0;
+            border-top: 1px solid #c6c6c6;
+            border-bottom: 1px solid #c6c6c6;
+            .title-contact {
+                color: #006598;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 40px;
+            }
+            .description-contact {
+                li {
+                    display: block;
+                    margin: 10px 0;
+                    color: #006598;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+            }
+        }
+        .assessment {
+            .assessment-title {
+                color: #006598;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 40px;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .assessment-condition {
+        margin-bottom: 15px;
+        color: #006598;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+    .assessment-sign {
+        color: #757575;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
     }
 
     #choice-form {
-        input {
+        .choice-button {
             display: block;
+            width: 268px;
+            height: 56px;
+            margin: 20px auto;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 13px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 30px;
+            background-image: linear-gradient(to top, #006396 0%, #009be3 100%);
         }
-
+        
         .star-rating{
           font-size:0;
           white-space:nowrap;
@@ -776,7 +878,7 @@ header {
           height:50px;
           overflow:hidden;
           position:relative;
-          background:
+          background: 
               url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
           background-size: contain;
           i{
@@ -825,13 +927,18 @@ header {
 
         //just styling for the number
         .choice{
-          position: relativeb;
+          position: relative;
           top: 0;
           left:0;
           right:0;
-          text-align: center;
-          padding: 20px;
           display:block;
+          padding: 20px;
+          text-align: center;
+          color: #006598;
+          font-size: 131px;
+          font-weight: 400;
+          line-height: 130px;
+          text-transform: uppercase;
         }
 
         //reset, center n shiz (don't mind this stuff)
@@ -842,18 +949,6 @@ header {
           box-sizing: border-box;
           text-align: center;  
           vertical-align: middle;
-        }
-        body{
-          font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
-          Helvetica, Arial, "Lucida Grande", sans-serif;
-          &::before{
-            height: 100%;
-            content:'';
-            width:0;
-            background:red;
-            vertical-align: middle;
-            display:inline-block;
-          }
         }
     }
 }

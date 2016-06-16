@@ -113,7 +113,7 @@
 				<h2 class="buss-info">
 					<span class="pre-title">Автобус: </span>
 					<span class="buss-model">MERCEDES 350</span>
-					<span class="region">Регіон: Вінниця</span>
+					<span class="buss-region">Регіон: <span>Вінниця</span></span>
 				</h2>
 				<ul class="bus-specifications">
 					<li>
@@ -134,7 +134,7 @@
 					</li>
 				</ul>
 				<h2 class="tarif-title">Тарифи</h2>
-				<ul>
+				<ul class="tarif-list">
 					<li>
 						<h4>Трансфер:</h4>
 						<span>договірні</span>
@@ -156,18 +156,20 @@
 						<span>5 зірковий автобус, Окрема кімната із спальними місцями, Душ, 2 Туалети, 4 LCD-монітора, LCD-TV + DVD, Аудіосистема, Клімат-контроля, Електрична плита, Кавоварка, Мікрохвильова піч, 2 Холодильника, Круглий стіл на 6 персон зі шкіряними сидіннями.</span>
 					</li>
 				</ul>
-				<div class="contacts-for-bus">
+				<div class="contacts-for-buss">
 					<h2 class="title-contact">Контакти:</h2>
-					<span class="description-contact">ТОВ ТРАНСТЕМПО
-					М. КИЇВ, ВУЛ. БОГДАНА 
-					ХМЕЛЬНИЦЬКОГО, 56
-					0442340740, 0674674400
-					TRANSTEMPO@UKR.NET
-					ТЕТЯНА</span>
+					<ul class="description-contact">
+						<li>ТОВ ТРАНСТЕМПО</li>	
+						<li>М. КИЇВ, ВУЛ. БОГДАНА ХМЕЛЬНИЦЬКОГО, 56</li>
+						<li>0442340740, 0674674400</li>
+						<li>TRANSTEMPO@UKR.NET</li>
+						<li>ТЕТЯНА</li>
+					</ul>
 				</div>
 				<div class="assessment">
 					<h2 class="assessment-title">Оцінка</h2>
 					<form id="choice-form" action="#" method="post">
+					<strong class="choice"></strong>
 					<span class="star-rating">
 					  <input type="radio" name="rating" value="1"><i></i>
 					  <input type="radio" name="rating" value="2"><i></i>
@@ -175,8 +177,7 @@
 					  <input type="radio" name="rating" value="4"><i></i>
 					  <input type="radio" name="rating" value="5"><i></i>
 					</span>
-					<strong class="choice">Choose a rating</strong>
-					<input type="submit" name="chooce" value="Залишити відгук">
+					<input class="choice-button" type="submit" name="chooce" value="Залишити відгук">
 				</form>
 				<h3 class="assessment-condition">Відгуків немає</h3>
 				<span class="assessment-sign">Ви маєте можливість залишити відгук першим!</span>
@@ -248,8 +249,8 @@
 	        centeredSlides: true,
 	        // spaceBetween: 30,
 	        autoplay:1500,
-	        bulletClass: 'swiper-pagination-bullet',
-	        bulletActiveClass: 'swiper-pagination-bullet-active',
+	        // bulletClass: 'swiper-pagination-bullet',
+	        // bulletActiveClass: 'swiper-pagination-bullet-active',
 	        speed:800
 	    });
 	</script>
