@@ -15,6 +15,7 @@
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
 	<link rel="stylesheet" href="stylesheets/jquery-ui.css">
+	<link rel="stylesheet" href="stylesheets/swiper.css">
 	<link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
@@ -80,14 +81,80 @@
 	        </h1>
         </div>
 	</header>
-	<section class="buss-rent">
+	<section class="page-navigation">
 		<div class="wrapper">
-			<div class="rate_background" onclick="set_rate(arguments[0], this);">
-			    <div class="rate_bar" style="width:50%;"></div>
-			</div>
-			<div id="rate"></div>
+        	<div class="nav-block">
+				<a href="#">
+					<img src="images/arrow-left.png" alt="arrow-left">
+        			<h4>новини</h4>
+				</a>
+        	</div>
 		</div>
 	</section>
+	<section class="buss-articles">
+		<articles class="buss-news">
+			<div class="wrapper">
+				<div class="img-wrapper">
+					<img src="images/buss-news-item-1.png" alt="MERCEDES 350">
+				</div>
+				<h2 class="news-title">ПАСАЖИРСЬКІ ПЕРЕВЕЗЕННЯ УКРАЇНА-РОСІЯ</h2>
+				<p class="news-date">14.04.2016</p>
+				<p class="news-description">Здавалося б, в умовах непростих відносин між Україною та Росією, про будь-які поїздки між кордонами цих країн і говорити не доводиться. Проте незважаючи на політичну ситуацію в країні, <span>пасажирські перевезення Україна-Росія</span> усе ще не втрачають свого попиту.</p>
+				<a class="news-more" href="#"> Детальніше</a>
+			</div>
+		</articles>
+		<articles class="buss-news">
+			<div class="wrapper">
+				<div class="img-wrapper">
+					<img src="images/buss-news-item-2.png" alt="MERCEDES 350">
+				</div>
+				<h2 class="news-title">УКРАЇНЦІВ НАЙБІЛЬШЕ ЦІКАВЛЯТЬ ПАСАЖИРСЬКІ ПЕРЕВЕЗЕння</h2>
+				<p class="news-date">14.04.2016</p>
+				<p class="news-description">Подорожувати люблять всі. Напевне, немає людини, яка б відмовилася поїхати в будь-яку країну Європи чи Америки, і пізнати життя з іншим темпераментом та зовсім іншим менталітетом. Проте кількість таких подорожей прямо пропорційно залежить від кількості грошей у гаманці. </p>
+				<a class="news-more" href="#"> Детальніше</a>
+			</div>
+		</articles>
+		<articles class="buss-news">
+			<div class="wrapper">
+				<div class="img-wrapper">
+					<img src="images/buss-news-item-3.png" alt="MERCEDES 350">
+				</div>
+				<h2 class="news-title">ПАСАЖИРСЬКІ ПЕРЕВЕЗЕННЯ АВТОБУСОМ</h2>
+				<p class="news-date">14.04.2016</p>
+				<p class="news-description">Кожен із нас прагне комфорту геть в усьому. Ми хочемо, щоби біля будинку завжди було чисто та затишно. Прагнемо, аби в магазинах до нас усміхалися продавці, а в ресторанах завжди були у гуморі офіціанти. Ми шукаємо комфорту на роботі чи по дорозі до офісу. </p>
+				<a class="news-more" href="#"> Детальніше</a>
+			</div>
+		</articles>
+		<ul class="articles-navigation">
+			<li>
+				<a href="#">1</a>
+			</li>
+			<li>
+				<a href="#">2</a>
+			</li>
+			<li>
+				<a href="#">3</a>
+			</li>
+			<li>
+				<a href="#">4</a>
+			</li>
+			<li>
+				<a href="#">5</a>
+			</li>
+			<li>
+				<a href="#">6</a>
+			</li>
+			<li>
+				<a href="#">7</a>
+			</li>
+			<li>
+				<a href="#">8</a>
+			</li>
+		</ul>
+		<h3 class="news-page-sign">
+			<a href="#">Пошукова система автобусних пасажирських перевезень</a>
+		</h3>
+	</articles>
 	<footer>
 		<div class="wrapper">
 			<p class="footer-content">
@@ -105,6 +172,7 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.ui.datepicker-ru.js"></script>
 	<script src="js/jquery-ui.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<script>
 		 $(function () {
 	        $('.hidden-menu li a').each(function () {
@@ -130,10 +198,31 @@
 	    });
 	</script>
 	<script>
-	$(function() {
-	    $("#datepicker1").datepicker($.datepicker.regional["ru"]);
-	    $("#datepicker2").datepicker($.datepicker.regional["ru"]);
-	});
+		$(function() {
+		    $("#datepicker1").datepicker($.datepicker.regional["ru"]);
+		    $("#datepicker2").datepicker($.datepicker.regional["ru"]);
+		});
+	</script>
+	<script>
+		$(':radio').change(
+		  function(){
+		    $('.choice').text( this.value );
+		  } 
+		)
+	</script>
+	<script>
+		 var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: true,
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        centeredSlides: true,
+	        // spaceBetween: 30,
+	        autoplay:1500,
+	        // bulletClass: 'swiper-pagination-bullet',
+	        // bulletActiveClass: 'swiper-pagination-bullet-active',
+	        speed:800
+	    });
 	</script>
 	<!-- This sourse fot active navigation. Uncomment this code fot activete navigation pagination -->
 	<!-- <script>
@@ -148,17 +237,5 @@
 	        });
 	    });
 	</script> -->
-	<script type="text/javascript">
-		function set_rate(event, el) {
-		    // Позиция клика относительно элемента
-		    event = event || window.event;
-		    if (event.clientX<=el.clientWidth) {
-		        var rate=Math.ceil(event.clientX/el.clientWidth*5);
-		 
-		        // Теперь значение rate от 1 до 5 можно обрабатывать как надо,
-		        // например, отправить на сервер через AJAX
-		    }
-		}
-	</script>
 </body>
 </html>
