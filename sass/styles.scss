@@ -48,7 +48,8 @@ input {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="submit"]:focus,
-input[type="radio"]:focus {
+input[type="radio"]:focus,
+textarea:focus {
     outline: none;
 }
 
@@ -325,7 +326,8 @@ header {
 }
 // main-page
 .main-page,
-.finder-tickets {
+.finder-tickets,
+.finder-tickets-one-side {
     margin-top: 20px;
 
     .ticket-form {
@@ -492,7 +494,8 @@ header {
     }
 }
 // .finder-tickets 
-.finder-tickets  {
+.finder-tickets ,
+.finder-tickets-one-side {
     .sity-marker {
         box-sizing: border-box;
         width: 100%;
@@ -508,6 +511,45 @@ header {
     .ather-date {
         margin: 0 auto 15px !important;
     }
+}
+// .finder-tickets-one-side
+.reis-top-list {
+    .reis-title {
+        box-sizing: border-box;
+        overflow: hidden;
+        .ticket-top-date {
+            float: left;
+            color: #0078b6;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 19px;
+            vertical-align: top;
+            text-transform: uppercase;
+        }
+        .ticket-top-price {
+            float: right;
+            color: #0078b6;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 19px;
+            vertical-align: top;
+            text-transform: capitalize;
+        }
+    }
+    .ticket-top-reis-direction {
+            margin: 13px 0 19px;
+            text-align: left;
+            color: #717171;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 22px;
+            .start-end-direction {
+                display: block;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
 }
 // hot-reis 
 .hot-reis {
@@ -577,7 +619,8 @@ header {
         }
     }
 }
-.reis-list {
+.reis-list,
+.reis-top-list {
     box-sizing: border-box;
     overflow: hidden;
     margin: 0 auto;
@@ -1003,7 +1046,8 @@ header {
     }
 }
 // buss-articles
-.buss-articles {
+.buss-articles,
+.buss-articles-more {
     background: #fff;
     .buss-news {
         display: block;
@@ -1097,29 +1141,185 @@ header {
         }
     }
 }
+// buss-articles-more
+.buss-articles-more {
+    .news-more-title {
+        color: #033d62;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    .news-more-date {
+        display: block;
+        margin: 20px 0;
+        color: #00426e;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    .news-description {
+        padding: 0 10px;
+        color: #343434;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+    .news-back {
+         display: block;
+        float: right;
+        width: 187px;
+        height: 40px;
+        margin: 0;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 40px;
+        border-radius: 30px;
+        background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+    }
+}
 // contact-page
 .contact-page {
 
-    input {
-        display: block;
+    .contact-list {
+        li {
+            margin: 10px auto;
+           h4, h3, span {
+                color: #033d62;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22px;
+           }
+           h4 {
+            display: inline-block;
+           }
+           .new-row  {
+                display: block;
+            }
+        }
+        .phone-list {
+            div {
+                margin: 15px 5px 15px 0;
+                overflow: hidden;
+                box-sizing: border-box;
+            }
+            img {
+                float: left;
+                margin-right: 10px;
+                clear: both;
+            }
+            span {
+                color: #033d62;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
     }
 
-    .map-responsive{
-        overflow:hidden;
-        padding-bottom:56.25%;
-        position:relative;
-        height:0;
-        iframe{
-            left:0;
-            top:0;
-            height:90%;
-            width:100%;
-            position:absolute;
+    .map-wrapper {
+        margin: 30px auto;
+        overflow: hidden;
+        box-sizing: border-box;
+        .map-responsive{
+            margin: 0 auto;
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+            iframe{
+                left:0;
+                top:0;
+                height:100%;
+                width:100%;
+                position:absolute;
+            }
         }
         .map-link {
-            position: absolute;
-            bottom: 0;
-            right: 0;
+            float: right;
+            margin: 20px 0 0;
+            color: #009de6;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+            text-decoration: none;
+        }
+    }
+    #contact-page-form {
+        clear: both;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        .form-title {
+            margin-bottom: 18px;
+            color: #033d62;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 22px;
+        }
+        label {
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+            color: #033d62;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22px;
+        }
+        input,
+        textarea {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            color: #636363;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 36px;
+            border: none;
+            border-radius: 30px;    
+            background-image: linear-gradient(to top, #d7d7d7 0%, #f3f3f3 100%);
+        }
+        input {
+            height: 36px;
+        }
+        textarea {
+            height: 118px;
+            padding-top: 10px;
+            resize: none;
+        }
+        .send-contact {
+            width: 163px;
+            height: 40px;
+            margin-top: 0;
+            margin: 33px 0 0;
+            color: #fff;
+            text-align: center;
+            float: right;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 40px;
+            background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+        }
+    }
+    .contact-page-sign {
+        clear: both;
+        display: block;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 60px auto 29px;
+        text-align: center;
+        a {
+            color: #363535;
+            font-size: 20px;
+            font-style: italic;
+            line-height: 25px;
+            text-decoration: none;
         }
     }
 }
