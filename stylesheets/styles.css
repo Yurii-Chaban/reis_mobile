@@ -2068,12 +2068,353 @@ input:checked + #info-mobile {
   border-top: 1px solid #c6c6c6;
 }
 
-/* line 1687, ../sass/styles.scss */
+/* line 1688, ../sass/styles.scss */
+.payment-ticket-page .payment-article-list,
+.payment-ticket-page .payment-article-contact {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 1694, ../sass/styles.scss */
+.payment-ticket-page .payment-article-list li,
+.payment-ticket-page .payment-article-contact li {
+  display: block;
+  margin: 15px 0;
+  text-align: left;
+  color: #033d62;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 1701, ../sass/styles.scss */
+.payment-ticket-page .payment-article-list li h4,
+.payment-ticket-page .payment-article-contact li h4 {
+  line-height: 40px;
+}
+/* line 1704, ../sass/styles.scss */
+.payment-ticket-page .payment-article-list li span,
+.payment-ticket-page .payment-article-contact li span {
+  line-height: 22px;
+}
+/* line 1709, ../sass/styles.scss */
+.payment-ticket-page .payment-article-contact {
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+}
+/* line 1713, ../sass/styles.scss */
+.payment-ticket-page .payment-article-contact .payment-price {
+  margin: 29px 0 28px;
+  color: #009de6;
+  font-size: 25px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 40px;
+}
+/* line 1722, ../sass/styles.scss */
+.payment-ticket-page .payment-article-button {
+  display: block;
+  width: 268px;
+  height: 56px;
+  margin: 36px auto 31px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+}
+/* line 1737, ../sass/styles.scss */
+.payment-ticket-page .img-block-direction {
+  padding: 10px 0;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+}
+/* line 1741, ../sass/styles.scss */
+.payment-ticket-page .img-block-direction .img-direction {
+  vertical-align: middle;
+}
+/* line 1743, ../sass/styles.scss */
+.payment-ticket-page .img-block-direction .img-direction img {
+  float: left;
+  margin-right: 16px;
+}
+/* line 1747, ../sass/styles.scss */
+.payment-ticket-page .img-block-direction .img-direction h3 {
+  color: #74b917;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+}
+/* line 1755, ../sass/styles.scss */
+.payment-ticket-page .private-office-contact {
+  border-top: 1px solid #c6c6c6;
+}
+
+/* line 1760, ../sass/styles.scss */
+.private-office-passenger {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 1766, ../sass/styles.scss */
+.private-office-passenger .welcome {
+  color: #777;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+/* line 1772, ../sass/styles.scss */
+.private-office-passenger .welcome .user-name {
+  display: block;
+}
+/* line 1776, ../sass/styles.scss */
+.private-office-passenger .private-office-articles {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: linear-gradient(to top, #d2d2d2 0%, #ebebeb 100%);
+}
+/* line 1786, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .articles-title {
+  padding-bottom: 20px;
+  color: #0078b6;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  background: url("../images/dotted-line.png") no-repeat bottom;
+  background-size: contain;
+}
+/* line 1797, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .articles-title .sharp-number {
+  float: left;
+}
+/* line 1800, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .articles-title .ticket-cost {
+  float: right;
+}
+/* line 1803, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .articles-title .paid-state {
+  clear: both;
+  float: right;
+  text-transform: uppercase;
+}
+/* line 1809, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .ticket-to,
+.private-office-passenger .private-office-articles .ticket-back {
+  margin: 18px 0 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* line 1815, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .ticket-to img,
+.private-office-passenger .private-office-articles .ticket-back img {
+  float: left;
+  margin: 0 6px 0 0;
+}
+/* line 1819, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .ticket-to .ticked-date-there,
+.private-office-passenger .private-office-articles .ticket-back .ticked-date-there {
+  color: #00679b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+}
+/* line 1825, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .ticket-to .way-direction,
+.private-office-passenger .private-office-articles .ticket-back .way-direction {
+  display: inline-block;
+  float: left;
+  color: #717171;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+}
+/* line 1833, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .ticket-to .number-of-people,
+.private-office-passenger .private-office-articles .ticket-back .number-of-people {
+  color: #00679b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+}
+/* line 1839, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .ticket-to .ticked-date-back,
+.private-office-passenger .private-office-articles .ticket-back .ticked-date-back {
+  float: left;
+  margin-left: 10px;
+  color: #0078b6;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/* line 1849, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .route {
+  color: #717171;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1854, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .route h2, .private-office-passenger .private-office-articles .route h3, .private-office-passenger .private-office-articles .route span {
+  text-align: left;
+}
+/* line 1857, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .route span {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+/* line 1863, ../sass/styles.scss */
+.private-office-passenger .private-office-articles .ticket-more-button {
+  float: right;
+  margin: 20px 0 0;
+  color: #00679b;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 17px;
+  text-decoration: none;
+}
+/* line 1873, ../sass/styles.scss */
+.private-office-passenger .articles-navigation {
+  margin: 13px auto 20px;
+  text-align: center;
+}
+/* line 1877, ../sass/styles.scss */
+.private-office-passenger .articles-navigation li {
+  display: inline-block;
+  margin: 0 5px;
+}
+/* line 1880, ../sass/styles.scss */
+.private-office-passenger .articles-navigation li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #939393;
+}
+/* line 1886, ../sass/styles.scss */
+.private-office-passenger .articles-navigation li a:hover {
+  color: #00679b;
+}
+
+/* line 1896, ../sass/styles.scss */
+.page-navigation-info .nav-block img {
+  float: left;
+  margin-top: 10px;
+}
+
+/* line 1903, ../sass/styles.scss */
+.info-more-page .wiev-order {
+  color: #009de6;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 22px;
+}
+/* line 1911, ../sass/styles.scss */
+.info-more-page .steps-direction img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 1916, ../sass/styles.scss */
+.info-more-page .steps-direction .steps-item {
+  margin: 28px auto;
+  padding: 0 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #343434;
+  font-weight: 400;
+  clear: both;
+}
+/* line 1924, ../sass/styles.scss */
+.info-more-page .steps-direction .steps-item span {
+  text-transform: uppercase;
+}
+/* line 1927, ../sass/styles.scss */
+.info-more-page .steps-direction .steps-item .steps {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 15px;
+  color: #343434;
+  font-weight: 700;
+}
+/* line 1933, ../sass/styles.scss */
+.info-more-page .steps-direction .steps-item .steps .wiev-order-sign {
+  color: #043e62;
+}
+/* line 1936, ../sass/styles.scss */
+.info-more-page .steps-direction .steps-item .steps span {
+  text-transform: uppercase;
+}
+/* line 1940, ../sass/styles.scss */
+.info-more-page .steps-direction .steps-item .some-page,
+.info-more-page .steps-direction .steps-item .details-button {
+  color: #043e62;
+  font-weight: 700;
+  text-transform: none;
+}
+/* line 1946, ../sass/styles.scss */
+.info-more-page .steps-direction .steps-item .details-button {
+  overflow: hidden;
+  display: inline-block;
+  color: #043e62;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* line 1955, ../sass/styles.scss */
+.info-more-page .steps-attantion {
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #343434;
+  font-weight: 400;
+}
+/* line 1961, ../sass/styles.scss */
+.info-more-page .steps-attantion .attantion-sign {
+  color: #fe0000;
+}
+/* line 1964, ../sass/styles.scss */
+.info-more-page .steps-attantion .steps-tickets {
+  color: #009de6;
+  font-style: italic;
+  text-decoration: none;
+}
+/* line 1970, ../sass/styles.scss */
+.info-more-page .info-page-sign {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 60px auto 29px;
+  text-align: center;
+}
+/* line 1977, ../sass/styles.scss */
+.info-more-page .info-page-sign a {
+  color: #363535;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+/* line 1987, ../sass/styles.scss */
 footer {
   padding: 34px 0 25px;
   background: url(../images/footer-bg.jpg) repeat-x;
 }
-/* line 1690, ../sass/styles.scss */
+/* line 1990, ../sass/styles.scss */
 footer .footer-content {
   max-width: 218px;
   margin: 0 auto 14px;
@@ -2085,13 +2426,13 @@ footer .footer-content {
   font-style: italic;
   text-transform: uppercase;
 }
-/* line 1701, ../sass/styles.scss */
+/* line 2001, ../sass/styles.scss */
 footer span {
   display: block;
   text-transform: none;
   font-weight: 400;
 }
-/* line 1706, ../sass/styles.scss */
+/* line 2006, ../sass/styles.scss */
 footer .footer-phone {
   display: block;
   margin: 20px auto;
@@ -2101,7 +2442,7 @@ footer .footer-phone {
   font-weight: 700;
   line-height: 20px;
 }
-/* line 1715, ../sass/styles.scss */
+/* line 2015, ../sass/styles.scss */
 footer .copyright {
   margin: 18px auto 0;
   text-align: center;
@@ -2110,12 +2451,12 @@ footer .copyright {
   font-weight: 400;
   line-height: 20px;
 }
-/* line 1723, ../sass/styles.scss */
+/* line 2023, ../sass/styles.scss */
 footer .copyright a {
   color: #636363;
   text-decoration: none;
 }
-/* line 1727, ../sass/styles.scss */
+/* line 2027, ../sass/styles.scss */
 footer .copyright a:hover {
   text-decoration: underline;
 }

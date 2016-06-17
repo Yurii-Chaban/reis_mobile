@@ -1683,6 +1683,306 @@ header {
         border-top: 1px solid #c6c6c6;
     }
 }
+// payment-ticket-page
+.payment-ticket-page {
+    .payment-article-list,
+    .payment-article-contact {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        li {
+            display: block;
+            margin: 15px 0;
+            text-align: left;
+            color: #033d62;
+            font-size: 18px;
+            font-weight: 400;
+            h4 {
+                line-height: 40px;
+            }
+            span {
+                line-height: 22px;
+            }
+        }
+    }
+    .payment-article-contact {
+        border-top: 1px solid #c6c6c6;
+        border-bottom: 1px solid #c6c6c6;
+
+        .payment-price {
+            margin: 29px 0 28px;
+            color: #009de6;
+            font-size: 25px;
+            text-align: left;
+            font-weight: 400;
+            line-height: 40px;
+        }
+    }
+    .payment-article-button {
+        display: block;
+        width: 268px;
+        height: 56px;
+        margin: 36px auto 31px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 56px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 30px;
+        background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+    }
+    .img-block-direction {
+        padding: 10px 0;
+        border-top: 1px solid #c6c6c6;
+        border-bottom: 1px solid #c6c6c6;
+        .img-direction {
+            vertical-align: middle;
+            img {
+                float: left;
+                margin-right: 16px;
+            }
+            h3 {
+                color: #74b917;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 35px;
+            }
+        }
+    }
+    .private-office-contact {
+        border-top: 1px solid #c6c6c6;
+    }
+}
+// private-office-passender
+.private-office-passenger {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+
+    .welcome {
+        color: #777;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        .user-name {
+            display: block;
+        }
+    }
+    .private-office-articles {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 20px;
+        background-image: linear-gradient(to top, #d2d2d2 0%, #ebebeb 100%);
+        .articles-title {
+            padding-bottom: 20px;
+            color: #0078b6;
+            box-sizing: border-box;
+            overflow: hidden;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28px;
+            background: url('../images/dotted-line.png') no-repeat bottom;
+            background-size: contain;
+
+            .sharp-number {
+                float: left;
+            }
+            .ticket-cost {
+                float: right;
+            }
+            .paid-state {
+                clear: both;
+                float: right;
+                text-transform: uppercase;
+            }
+        }
+        .ticket-to,
+        .ticket-back {
+            margin: 18px 0 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            img {
+                float: left;
+                margin: 0 6px 0 0;
+            }
+            .ticked-date-there {
+                color: #00679b;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 17px;
+            }
+            .way-direction {
+                display: inline-block;
+                float: left;
+                color: #717171;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 15px;
+            }
+            .number-of-people {
+                color: #00679b;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 17px;
+            }
+            .ticked-date-back {
+                float: left;
+                margin-left: 10px;
+                color: #0078b6;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 20px;
+                text-transform: uppercase;
+            }
+        }
+        .route {
+            color: #717171;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            h2, h3, span {
+                text-align: left;
+            }
+            span {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+        .ticket-more-button {
+            float: right;
+            margin: 20px 0 0;
+            color: #00679b;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 17px;
+            text-decoration: none;
+        }
+    }
+    .articles-navigation {
+        margin: 13px auto 20px;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin: 0 5px;
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 20px;
+                color: #939393;
+                &:hover {
+                    color: #00679b;
+                }
+            }
+        }
+    }
+}
+// info-more-page 
+.page-navigation-info {
+    .nav-block {
+        img {
+            float: left;
+            margin-top: 10px;
+        }
+    }
+}
+.info-more-page {
+    .wiev-order {
+        color: #009de6;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 22px;
+    }
+    .steps-direction {
+
+        img {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .steps-item {
+            margin: 28px auto;
+            padding: 0 10px;
+            font-size: 18px;
+            line-height: 22px;
+            color: #343434;
+            font-weight: 400;
+            clear: both;
+            span {
+                text-transform: uppercase;
+            }
+            .steps {
+                box-sizing: border-box;
+                overflow: hidden;
+                margin-top: 15px;
+                color: #343434;
+                font-weight: 700;
+                .wiev-order-sign {
+                    color: #043e62;
+                }
+                span {
+                    text-transform: uppercase;
+                }
+            }
+            .some-page,
+            .details-button {
+                color: #043e62;
+                font-weight: 700;
+                text-transform: none;
+            }
+            .details-button {
+                overflow: hidden;
+                display: inline-block;
+                color: #043e62;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+    .steps-attantion {
+        margin-top: 60px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #343434;
+        font-weight: 400;
+        .attantion-sign {
+            color: #fe0000;
+        }
+        .steps-tickets {
+            color: #009de6;
+            font-style: italic;
+            text-decoration: none;
+        }
+    }
+    .info-page-sign {
+        clear: both;
+        display: block;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 60px auto 29px;
+        text-align: center;
+        a {
+            color: #363535;
+            font-size: 20px;
+            font-style: italic;
+            line-height: 25px;
+            text-decoration: none;
+        }
+    }
+}
 // footer
 footer {
     padding: 34px 0 25px;
