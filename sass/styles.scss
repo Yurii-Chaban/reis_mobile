@@ -1570,6 +1570,119 @@ header {
         }
     }
 }
+// useful-information
+.useful-information {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+
+    .information-list {
+        margin: 0 auto;
+        text-align: center;
+
+        li {
+            display: block;
+            margin: 24px 0;
+            text-align: left;
+            a {
+                color: #033d62;
+                font-size: 18px;
+                font-style: italic;
+                line-height: 22px;
+                text-decoration: underline;
+            }
+        }
+    }
+    .info-page-sign {
+        clear: both;
+        display: block;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 60px auto 29px;
+        text-align: center;
+        a {
+            color: #363535;
+            font-size: 20px;
+            font-style: italic;
+            line-height: 25px;
+            text-decoration: none;
+        }
+    }
+}
+// private-office-page 
+.private-office-page {
+
+    .private-order-info {
+        .private-order-date,
+        .private-order-number,
+        .private-order-price {
+            margin: 16px 0;
+            color: #006598;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+    }
+
+    .private-ticket-list,
+    .private-office-contact {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+        li {
+            display: block;
+            margin: 15px 0;
+            text-align: left;
+            color: #033d62;
+            font-size: 18px;
+            font-weight: 400;
+            h4 {
+                line-height: 40px;
+            }
+            span {
+                line-height: 22px;
+            }
+        }
+    }
+    .print-ticket-button {
+        display: block;
+        width: 268px;
+        height: 56px;
+        margin: 36px auto 31px;
+        text-align: center;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 56px;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 30px;
+        background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+    }
+    .img-block-direction {
+        padding: 10px 0;
+        border-top: 1px solid #c6c6c6;
+        border-bottom: 1px solid #c6c6c6;
+        .img-direction {
+            vertical-align: middle;
+            img {
+                float: left;
+                margin-right: 16px;
+            }
+            h3 {
+                color: #74b917;
+                font-size: 25px;
+                font-weight: 400;
+                line-height: 35px;
+            }
+        }
+    }
+    .private-office-contact {
+        border-top: 1px solid #c6c6c6;
+    }
+}
 // footer
 footer {
     padding: 34px 0 25px;

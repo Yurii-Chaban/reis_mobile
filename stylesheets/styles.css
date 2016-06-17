@@ -1945,11 +1945,135 @@ input:checked + #info-mobile {
 }
 
 /* line 1574, ../sass/styles.scss */
+.useful-information {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 1580, ../sass/styles.scss */
+.useful-information .information-list {
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 1584, ../sass/styles.scss */
+.useful-information .information-list li {
+  display: block;
+  margin: 24px 0;
+  text-align: left;
+}
+/* line 1588, ../sass/styles.scss */
+.useful-information .information-list li a {
+  color: #033d62;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 22px;
+  text-decoration: underline;
+}
+/* line 1597, ../sass/styles.scss */
+.useful-information .info-page-sign {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 60px auto 29px;
+  text-align: center;
+}
+/* line 1604, ../sass/styles.scss */
+.useful-information .info-page-sign a {
+  color: #363535;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+/* line 1617, ../sass/styles.scss */
+.private-office-page .private-order-info .private-order-date,
+.private-office-page .private-order-info .private-order-number,
+.private-office-page .private-order-info .private-order-price {
+  margin: 16px 0;
+  color: #006598;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1628, ../sass/styles.scss */
+.private-office-page .private-ticket-list,
+.private-office-page .private-office-contact {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 1634, ../sass/styles.scss */
+.private-office-page .private-ticket-list li,
+.private-office-page .private-office-contact li {
+  display: block;
+  margin: 15px 0;
+  text-align: left;
+  color: #033d62;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* line 1641, ../sass/styles.scss */
+.private-office-page .private-ticket-list li h4,
+.private-office-page .private-office-contact li h4 {
+  line-height: 40px;
+}
+/* line 1644, ../sass/styles.scss */
+.private-office-page .private-ticket-list li span,
+.private-office-page .private-office-contact li span {
+  line-height: 22px;
+}
+/* line 1649, ../sass/styles.scss */
+.private-office-page .print-ticket-button {
+  display: block;
+  width: 268px;
+  height: 56px;
+  margin: 36px auto 31px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 30px;
+  background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+}
+/* line 1664, ../sass/styles.scss */
+.private-office-page .img-block-direction {
+  padding: 10px 0;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+}
+/* line 1668, ../sass/styles.scss */
+.private-office-page .img-block-direction .img-direction {
+  vertical-align: middle;
+}
+/* line 1670, ../sass/styles.scss */
+.private-office-page .img-block-direction .img-direction img {
+  float: left;
+  margin-right: 16px;
+}
+/* line 1674, ../sass/styles.scss */
+.private-office-page .img-block-direction .img-direction h3 {
+  color: #74b917;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+}
+/* line 1682, ../sass/styles.scss */
+.private-office-page .private-office-contact {
+  border-top: 1px solid #c6c6c6;
+}
+
+/* line 1687, ../sass/styles.scss */
 footer {
   padding: 34px 0 25px;
   background: url(../images/footer-bg.jpg) repeat-x;
 }
-/* line 1577, ../sass/styles.scss */
+/* line 1690, ../sass/styles.scss */
 footer .footer-content {
   max-width: 218px;
   margin: 0 auto 14px;
@@ -1961,13 +2085,13 @@ footer .footer-content {
   font-style: italic;
   text-transform: uppercase;
 }
-/* line 1588, ../sass/styles.scss */
+/* line 1701, ../sass/styles.scss */
 footer span {
   display: block;
   text-transform: none;
   font-weight: 400;
 }
-/* line 1593, ../sass/styles.scss */
+/* line 1706, ../sass/styles.scss */
 footer .footer-phone {
   display: block;
   margin: 20px auto;
@@ -1977,7 +2101,7 @@ footer .footer-phone {
   font-weight: 700;
   line-height: 20px;
 }
-/* line 1602, ../sass/styles.scss */
+/* line 1715, ../sass/styles.scss */
 footer .copyright {
   margin: 18px auto 0;
   text-align: center;
@@ -1986,12 +2110,12 @@ footer .copyright {
   font-weight: 400;
   line-height: 20px;
 }
-/* line 1610, ../sass/styles.scss */
+/* line 1723, ../sass/styles.scss */
 footer .copyright a {
   color: #636363;
   text-decoration: none;
 }
-/* line 1614, ../sass/styles.scss */
+/* line 1727, ../sass/styles.scss */
 footer .copyright a:hover {
   text-decoration: underline;
 }
