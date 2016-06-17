@@ -1983,6 +1983,67 @@ header {
         }
     }
 }
+// rent-bus-page
+.rent-bus-page {
+    .rent-list {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 0 auto 22px;
+        text-align: center;
+        li {
+            display: block;
+            margin: 8px auto;
+            padding: 10px;
+            text-align: left;
+            border-radius: 15px;
+            background-image: linear-gradient(to top, #d4d4d4 0%, whitesmoke 100%);
+            a {
+                text-decoration: none;
+                color: #00679b;
+                font-size: 19px;
+                line-height: 29px;
+                font-weight: 400;
+                span {
+                    font-weight: 700;
+                }
+                img {
+                    float: right;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+.rent-bus {
+    .rent-sity-list {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 0 auto 22px;
+        text-align: center;
+        li {
+            display: block;
+            margin: 8px auto;
+            padding: 10px;
+            text-align: left;
+            border-radius: 15px;
+            background-image: linear-gradient(to top, #d4d4d4 0%, whitesmoke 100%);
+            a {
+                color: #00679b;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 30px;
+                text-transform: uppercase;
+                text-decoration: none;
+                img {
+                    float: right;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
 // footer
 footer {
     padding: 34px 0 25px;

@@ -2409,12 +2409,79 @@ input:checked + #info-mobile {
   text-decoration: none;
 }
 
-/* line 1987, ../sass/styles.scss */
+/* line 1988, ../sass/styles.scss */
+.rent-bus-page .rent-list {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto 22px;
+  text-align: center;
+}
+/* line 1994, ../sass/styles.scss */
+.rent-bus-page .rent-list li {
+  display: block;
+  margin: 8px auto;
+  padding: 10px;
+  text-align: left;
+  border-radius: 15px;
+  background-image: linear-gradient(to top, #d4d4d4 0%, whitesmoke 100%);
+}
+/* line 2001, ../sass/styles.scss */
+.rent-bus-page .rent-list li a {
+  text-decoration: none;
+  color: #00679b;
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: 400;
+}
+/* line 2007, ../sass/styles.scss */
+.rent-bus-page .rent-list li a span {
+  font-weight: 700;
+}
+/* line 2010, ../sass/styles.scss */
+.rent-bus-page .rent-list li a img {
+  float: right;
+  margin-top: 10px;
+}
+
+/* line 2019, ../sass/styles.scss */
+.rent-bus .rent-sity-list {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0 auto 22px;
+  text-align: center;
+}
+/* line 2025, ../sass/styles.scss */
+.rent-bus .rent-sity-list li {
+  display: block;
+  margin: 8px auto;
+  padding: 10px;
+  text-align: left;
+  border-radius: 15px;
+  background-image: linear-gradient(to top, #d4d4d4 0%, whitesmoke 100%);
+}
+/* line 2032, ../sass/styles.scss */
+.rent-bus .rent-sity-list li a {
+  color: #00679b;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 2039, ../sass/styles.scss */
+.rent-bus .rent-sity-list li a img {
+  float: right;
+  margin-top: 10px;
+}
+
+/* line 2048, ../sass/styles.scss */
 footer {
   padding: 34px 0 25px;
   background: url(../images/footer-bg.jpg) repeat-x;
 }
-/* line 1990, ../sass/styles.scss */
+/* line 2051, ../sass/styles.scss */
 footer .footer-content {
   max-width: 218px;
   margin: 0 auto 14px;
@@ -2426,13 +2493,13 @@ footer .footer-content {
   font-style: italic;
   text-transform: uppercase;
 }
-/* line 2001, ../sass/styles.scss */
+/* line 2062, ../sass/styles.scss */
 footer span {
   display: block;
   text-transform: none;
   font-weight: 400;
 }
-/* line 2006, ../sass/styles.scss */
+/* line 2067, ../sass/styles.scss */
 footer .footer-phone {
   display: block;
   margin: 20px auto;
@@ -2442,7 +2509,7 @@ footer .footer-phone {
   font-weight: 700;
   line-height: 20px;
 }
-/* line 2015, ../sass/styles.scss */
+/* line 2076, ../sass/styles.scss */
 footer .copyright {
   margin: 18px auto 0;
   text-align: center;
@@ -2451,12 +2518,12 @@ footer .copyright {
   font-weight: 400;
   line-height: 20px;
 }
-/* line 2023, ../sass/styles.scss */
+/* line 2084, ../sass/styles.scss */
 footer .copyright a {
   color: #636363;
   text-decoration: none;
 }
-/* line 2027, ../sass/styles.scss */
+/* line 2088, ../sass/styles.scss */
 footer .copyright a:hover {
   text-decoration: underline;
 }
