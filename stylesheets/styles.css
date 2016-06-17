@@ -1487,51 +1487,59 @@ input:checked + #info-mobile {
   background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
 }
 
-/* line 1188, ../sass/styles.scss */
+/* line 1187, ../sass/styles.scss */
+.contact-page .contact-list {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 1192, ../sass/styles.scss */
 .contact-page .contact-list li {
   margin: 10px auto;
+  text-align: left;
 }
-/* line 1190, ../sass/styles.scss */
+/* line 1195, ../sass/styles.scss */
 .contact-page .contact-list li h4, .contact-page .contact-list li h3, .contact-page .contact-list li span {
   color: #033d62;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
 }
-/* line 1196, ../sass/styles.scss */
+/* line 1201, ../sass/styles.scss */
 .contact-page .contact-list li h4 {
   display: inline-block;
 }
-/* line 1199, ../sass/styles.scss */
+/* line 1204, ../sass/styles.scss */
 .contact-page .contact-list li .new-row {
   display: block;
 }
-/* line 1204, ../sass/styles.scss */
+/* line 1209, ../sass/styles.scss */
 .contact-page .contact-list .phone-list div {
   margin: 15px 5px 15px 0;
   overflow: hidden;
   box-sizing: border-box;
 }
-/* line 1209, ../sass/styles.scss */
+/* line 1214, ../sass/styles.scss */
 .contact-page .contact-list .phone-list img {
   float: left;
   margin-right: 10px;
   clear: both;
 }
-/* line 1214, ../sass/styles.scss */
+/* line 1219, ../sass/styles.scss */
 .contact-page .contact-list .phone-list span {
   color: #033d62;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
 }
-/* line 1223, ../sass/styles.scss */
+/* line 1228, ../sass/styles.scss */
 .contact-page .map-wrapper {
   margin: 30px auto;
   overflow: hidden;
   box-sizing: border-box;
 }
-/* line 1227, ../sass/styles.scss */
+/* line 1232, ../sass/styles.scss */
 .contact-page .map-wrapper .map-responsive {
   margin: 0 auto;
   overflow: hidden;
@@ -1539,7 +1547,7 @@ input:checked + #info-mobile {
   position: relative;
   height: 0;
 }
-/* line 1233, ../sass/styles.scss */
+/* line 1238, ../sass/styles.scss */
 .contact-page .map-wrapper .map-responsive iframe {
   left: 0;
   top: 0;
@@ -1547,7 +1555,7 @@ input:checked + #info-mobile {
   width: 100%;
   position: absolute;
 }
-/* line 1241, ../sass/styles.scss */
+/* line 1246, ../sass/styles.scss */
 .contact-page .map-wrapper .map-link {
   float: right;
   margin: 20px 0 0;
@@ -1557,14 +1565,14 @@ input:checked + #info-mobile {
   line-height: 22px;
   text-decoration: none;
 }
-/* line 1251, ../sass/styles.scss */
+/* line 1256, ../sass/styles.scss */
 .contact-page #contact-page-form {
   clear: both;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
 }
-/* line 1257, ../sass/styles.scss */
+/* line 1262, ../sass/styles.scss */
 .contact-page #contact-page-form .form-title {
   margin-bottom: 18px;
   color: #033d62;
@@ -1572,7 +1580,7 @@ input:checked + #info-mobile {
   font-weight: 700;
   line-height: 22px;
 }
-/* line 1264, ../sass/styles.scss */
+/* line 1269, ../sass/styles.scss */
 .contact-page #contact-page-form label {
   display: block;
   width: 100%;
@@ -1582,7 +1590,7 @@ input:checked + #info-mobile {
   font-weight: 700;
   line-height: 22px;
 }
-/* line 1273, ../sass/styles.scss */
+/* line 1278, ../sass/styles.scss */
 .contact-page #contact-page-form input,
 .contact-page #contact-page-form textarea {
   display: block;
@@ -1598,17 +1606,17 @@ input:checked + #info-mobile {
   border-radius: 30px;
   background-image: linear-gradient(to top, #d7d7d7 0%, #f3f3f3 100%);
 }
-/* line 1288, ../sass/styles.scss */
+/* line 1293, ../sass/styles.scss */
 .contact-page #contact-page-form input {
   height: 36px;
 }
-/* line 1291, ../sass/styles.scss */
+/* line 1296, ../sass/styles.scss */
 .contact-page #contact-page-form textarea {
   height: 118px;
   padding-top: 10px;
   resize: none;
 }
-/* line 1296, ../sass/styles.scss */
+/* line 1301, ../sass/styles.scss */
 .contact-page #contact-page-form .send-contact {
   width: 163px;
   height: 40px;
@@ -1622,7 +1630,7 @@ input:checked + #info-mobile {
   line-height: 40px;
   background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
 }
-/* line 1310, ../sass/styles.scss */
+/* line 1315, ../sass/styles.scss */
 .contact-page .contact-page-sign {
   clear: both;
   display: block;
@@ -1631,7 +1639,7 @@ input:checked + #info-mobile {
   margin: 60px auto 29px;
   text-align: center;
 }
-/* line 1317, ../sass/styles.scss */
+/* line 1322, ../sass/styles.scss */
 .contact-page .contact-page-sign a {
   color: #363535;
   font-size: 20px;
@@ -1640,12 +1648,308 @@ input:checked + #info-mobile {
   text-decoration: none;
 }
 
-/* line 1327, ../sass/styles.scss */
+/* line 1332, ../sass/styles.scss */
+.buy-tickets,
+.buy-tickets-two {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* line 1338, ../sass/styles.scss */
+.buy-tickets .buy-date,
+.buy-tickets-two .buy-date {
+  margin: 19px 0 23px;
+  color: #006598;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1345, ../sass/styles.scss */
+.buy-tickets .buy-price,
+.buy-tickets-two .buy-price {
+  color: #006598;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1351, ../sass/styles.scss */
+.buy-tickets .buy-block,
+.buy-tickets-two .buy-block {
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 15px auto;
+  padding: 28px 0 34px;
+  border-top: 1px solid #c6c6c6;
+}
+/* line 1359, ../sass/styles.scss */
+.buy-tickets .buy-block .buy-tickets-list,
+.buy-tickets-two .buy-block .buy-tickets-list {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* line 1366, ../sass/styles.scss */
+.buy-tickets .buy-block .buy-tickets-list li,
+.buy-tickets-two .buy-block .buy-tickets-list li {
+  margin: 5px auto;
+  text-align: left;
+}
+/* line 1369, ../sass/styles.scss */
+.buy-tickets .buy-block .buy-tickets-list li h4,
+.buy-tickets-two .buy-block .buy-tickets-list li h4 {
+  color: #313131;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  line-height: 22px;
+}
+/* line 1376, ../sass/styles.scss */
+.buy-tickets .buy-block .buy-tickets-list li span,
+.buy-tickets-two .buy-block .buy-tickets-list li span {
+  color: #313131;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  line-height: 22px;
+}
+/* line 1383, ../sass/styles.scss */
+.buy-tickets .buy-block .buy-tickets-list li .start-race,
+.buy-tickets .buy-block .buy-tickets-list li .end-race,
+.buy-tickets-two .buy-block .buy-tickets-list li .start-race,
+.buy-tickets-two .buy-block .buy-tickets-list li .end-race {
+  font-weight: 700;
+  line-height: 22px;
+}
+/* line 1391, ../sass/styles.scss */
+.buy-tickets .buy-block .place-title,
+.buy-tickets-two .buy-block .place-title {
+  margin-bottom: 28px;
+  color: #006598;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1398, ../sass/styles.scss */
+.buy-tickets .buy-block .cost,
+.buy-tickets-two .buy-block .cost {
+  color: #006598;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1406, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme,
+.buy-tickets-two .buy-block .buss-scheme .scheme {
+  width: 271px;
+  height: auto;
+  margin: 25px auto 29px;
+  padding: 24px 9px 33px;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  background-color: black;
+  background-image: linear-gradient(to top, lightgrey 0%, #eaeaea 100%);
+  border: 1px solid #bdbdbd;
+  border-radius: 20px;
+}
+/* line 1419, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .bus-scheme-title,
+.buy-tickets-two .buy-block .buss-scheme .scheme .bus-scheme-title {
+  margin: 24px auto 18px;
+  text-align: center;
+  color: #8f9195;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 25px;
+}
+/* line 1427, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place {
+  width: 100%;
+}
+/* line 1429, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li {
+  display: inline-block;
+  width: 40px;
+  height: 34px;
+  margin: 16px 3px 12px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 34px;
+  vertical-align: middle;
+}
+/* line 1439, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li a,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+}
+/* line 1447, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li .default,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li .default {
+  background: inherit;
+}
+/* line 1450, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li .free,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li .free {
+  background-color: #5a9c10;
+  border-radius: 3px;
+}
+/* line 1454, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li .booked,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li .booked {
+  background-color: #939598;
+  border-radius: 3px;
+}
+/* line 1458, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li .new-booked,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li .new-booked {
+  background-color: #939598;
+  border-radius: 3px;
+}
+/* line 1462, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li .uknown,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li .uknown {
+  background: #009ce6;
+  border-radius: 3px;
+}
+/* line 1466, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li .sold,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li .sold {
+  background-color: #ca0000;
+  border-radius: 3px;
+}
+/* line 1470, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place li img,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place li img {
+  vertical-align: middle;
+}
+/* line 1474, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .scheme .buss-place .img-li,
+.buy-tickets-two .buy-block .buss-scheme .scheme .buss-place .img-li {
+  background-color: #f3f3f3;
+}
+/* line 1480, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .legend-block .legend-title,
+.buy-tickets-two .buy-block .buss-scheme .legend-block .legend-title {
+  color: #939598;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1486, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .legend-block .legend-item,
+.buy-tickets-two .buy-block .buss-scheme .legend-block .legend-item {
+  margin: 0 auto;
+  width: 100%;
+}
+/* line 1490, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .legend-block .legend-item li,
+.buy-tickets-two .buy-block .buss-scheme .legend-block .legend-item li {
+  display: flex;
+  width: 100%;
+  margin: 20px 0;
+  vertical-align: middle;
+}
+/* line 1496, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .legend-block .legend-item li img,
+.buy-tickets-two .buy-block .buss-scheme .legend-block .legend-item li img {
+  margin-right: 10px;
+}
+/* line 1499, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .legend-block .legend-item li span,
+.buy-tickets-two .buy-block .buss-scheme .legend-block .legend-item li span {
+  color: #939598;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1507, ../sass/styles.scss */
+.buy-tickets .buy-block .buss-scheme .legend-block .scheme-attantion,
+.buy-tickets-two .buy-block .buss-scheme .legend-block .scheme-attantion {
+  color: #ff1200;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 1515, ../sass/styles.scss */
+.buy-tickets .buy-block .back-button,
+.buy-tickets .buy-block .pay-button,
+.buy-tickets-two .buy-block .back-button,
+.buy-tickets-two .buy-block .pay-button {
+  display: block;
+  width: 100%;
+  height: 56px;
+  margin: 0 auto 18px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+/* line 1529, ../sass/styles.scss */
+.buy-tickets .buy-block .back-button,
+.buy-tickets-two .buy-block .back-button {
+  color: #006598;
+  background-image: linear-gradient(to top, #cacaca 0%, #efefef 100%);
+}
+/* line 1533, ../sass/styles.scss */
+.buy-tickets .buy-block .pay-button,
+.buy-tickets-two .buy-block .pay-button {
+  color: #fff;
+  margin-bottom: 34px;
+  background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+}
+
+/* line 1543, ../sass/styles.scss */
+.buy-tickets-two .img-block-direction {
+  padding: 10px 0 0;
+}
+/* line 1546, ../sass/styles.scss */
+.buy-tickets-two .img-direction {
+  vertical-align: middle;
+}
+/* line 1548, ../sass/styles.scss */
+.buy-tickets-two .img-direction img {
+  float: left;
+  margin-right: 16px;
+}
+/* line 1552, ../sass/styles.scss */
+.buy-tickets-two .img-direction h3 {
+  color: #74b917;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+}
+/* line 1559, ../sass/styles.scss */
+.buy-tickets-two .place-title {
+  margin-top: 20px;
+}
+/* line 1564, ../sass/styles.scss */
+.buy-tickets-two .buy-tickets-list li h4 {
+  color: #797979 !important;
+}
+/* line 1567, ../sass/styles.scss */
+.buy-tickets-two .buy-tickets-list li span {
+  color: #393939 !important;
+}
+
+/* line 1574, ../sass/styles.scss */
 footer {
   padding: 34px 0 25px;
   background: url(../images/footer-bg.jpg) repeat-x;
 }
-/* line 1330, ../sass/styles.scss */
+/* line 1577, ../sass/styles.scss */
 footer .footer-content {
   max-width: 218px;
   margin: 0 auto 14px;
@@ -1657,13 +1961,13 @@ footer .footer-content {
   font-style: italic;
   text-transform: uppercase;
 }
-/* line 1341, ../sass/styles.scss */
+/* line 1588, ../sass/styles.scss */
 footer span {
   display: block;
   text-transform: none;
   font-weight: 400;
 }
-/* line 1346, ../sass/styles.scss */
+/* line 1593, ../sass/styles.scss */
 footer .footer-phone {
   display: block;
   margin: 20px auto;
@@ -1673,7 +1977,7 @@ footer .footer-phone {
   font-weight: 700;
   line-height: 20px;
 }
-/* line 1355, ../sass/styles.scss */
+/* line 1602, ../sass/styles.scss */
 footer .copyright {
   margin: 18px auto 0;
   text-align: center;
@@ -1682,12 +1986,12 @@ footer .copyright {
   font-weight: 400;
   line-height: 20px;
 }
-/* line 1363, ../sass/styles.scss */
+/* line 1610, ../sass/styles.scss */
 footer .copyright a {
   color: #636363;
   text-decoration: none;
 }
-/* line 1367, ../sass/styles.scss */
+/* line 1614, ../sass/styles.scss */
 footer .copyright a:hover {
   text-decoration: underline;
 }

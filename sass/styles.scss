@@ -1185,8 +1185,13 @@ header {
 .contact-page {
 
     .contact-list {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
         li {
             margin: 10px auto;
+            text-align: left;
            h4, h3, span {
                 color: #033d62;
                 font-size: 18px;
@@ -1320,6 +1325,248 @@ header {
             font-style: italic;
             line-height: 25px;
             text-decoration: none;
+        }
+    }
+}
+// buy-tickets
+.buy-tickets,
+.buy-tickets-two {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    .buy-date {
+        margin: 19px 0 23px;
+        color: #006598;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .buy-price {
+        color: #006598;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .buy-block {
+        display: block;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 15px auto;
+        padding: 28px 0 34px;
+        border-top: 1px solid #c6c6c6;
+
+        .buy-tickets-list {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            box-sizing: border-box;
+            overflow: hidden;
+
+            li {
+                margin: 5px auto;
+                text-align: left;
+                h4 {
+                    color: #313131;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    line-height: 22px;
+                }
+                span {
+                    color: #313131;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    line-height: 22px;
+                }
+                .start-race,
+                .end-race {
+                    font-weight: 700;
+                    line-height: 22px;
+                }
+            }
+        }
+        
+        .place-title {
+            margin-bottom: 28px;
+            color: #006598;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+        .cost {
+            color: #006598;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 30px;
+        }
+
+        .buss-scheme {
+            .scheme {
+                width: 271px;
+                height: auto;
+                margin: 25px auto 29px;
+                padding: 24px 9px 33px;
+                box-sizing: border-box;
+                overflow: hidden;
+                text-align: center;
+                background-color: black;
+                background-image: linear-gradient(to top, lightgrey 0%, #eaeaea 100%);
+                border: 1px solid #bdbdbd;
+                border-radius: 20px;
+
+                .bus-scheme-title {
+                    margin: 24px auto 18px;
+                    text-align: center;
+                    color: #8f9195;
+                    font-size: 25px;
+                    font-weight: 400;
+                    line-height: 25px;
+                }
+                .buss-place {
+                    width: 100%;
+                    li {
+                        display: inline-block;
+                        width: 40px;
+                        height: 34px;
+                        margin: 16px 3px 12px;
+                        // background: inherit;
+                        border-radius: 3px;
+                        text-align: center;
+                        line-height: 34px;
+                        vertical-align: middle;
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            text-align: center;
+                            color: #fff;
+                            text-decoration: none;
+                        }
+                        .default {
+                            background: inherit;
+                        }
+                        .free {
+                            background-color: #5a9c10;
+                            border-radius: 3px;
+                        }
+                        .booked {
+                            background-color: #939598;
+                            border-radius: 3px;
+                        }
+                        .new-booked {
+                            background-color: #939598;
+                            border-radius: 3px;
+                        }
+                        .uknown {
+                            background: #009ce6;
+                            border-radius: 3px;
+                        }
+                        .sold {
+                            background-color: #ca0000;
+                            border-radius: 3px;
+                        }
+                        img {
+                            vertical-align: middle;
+                        }
+                    }
+                    .img-li {
+                        background-color: #f3f3f3;
+                    }
+                }
+            }
+             .legend-block {
+                .legend-title {
+                    color: #939598;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;
+                }
+                .legend-item {
+                    margin: 0 auto;
+                    width: 100%;
+
+                    li {
+                        display: flex;
+                        width: 100%;
+                        margin: 20px 0;
+                        vertical-align: middle;
+
+                        img {
+                            margin-right: 10px;
+                        }
+                        span {
+                            color: #939598;
+                            font-size: 18px;
+                            font-weight: 400;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                .scheme-attantion {
+                    color: #ff1200;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 30px;  
+                }
+            }
+        }
+        .back-button,
+        .pay-button {
+            display: block;
+            width: 100%;
+            height: 56px;
+            margin: 0 auto 18px;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 56px;
+            text-transform: uppercase;
+            border-radius: 30px;
+        }
+        .back-button {
+            color: #006598;
+            background-image: linear-gradient(to top, #cacaca 0%, #efefef 100%);
+        }
+        .pay-button {
+            color: #fff;
+            margin-bottom: 34px;
+            background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+        }
+    }
+}
+// .buy-tickets-two 
+.buy-tickets-two {
+
+    .img-block-direction {
+        padding: 10px 0 0;
+    }
+    .img-direction {
+        vertical-align: middle;
+        img {
+            float: left;
+            margin-right: 16px;
+        }
+        h3 {
+            color: #74b917;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 35px;
+        }
+    }
+    .place-title {
+        margin-top: 20px;
+    }
+    .buy-tickets-list {
+        li {
+            h4 {
+                color: #797979 !important;
+            }
+            span {
+                color: #393939 !important;
+            }
         }
     }
 }
