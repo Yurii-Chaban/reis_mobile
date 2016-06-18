@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Reis</title>
+
+	<!-- Include media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- Include styles -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<link rel="stylesheet" href="stylesheets/jquery-ui.css">
+	<link rel="stylesheet" href="stylesheets/icon.css">
+	<link rel="stylesheet" href="stylesheets/semantic.css">
+	<link rel="stylesheet" href="stylesheets/dropdown.css">
+	<link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<div class="dropdovn-menu">
+	            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+				<label class="btn-menu" for="hmt">
+				  <span class="first"></span>
+				  <span class="second"></span>
+				  <span class="third"></span>
+				</label>
+				<ul class="hidden-menu">
+					<li class="language-select">
+						<a href="#">Укр</a>
+						<span>|</span>
+						<a href="#">Рус</a>
+					</li>
+	                <li>
+	                	<a href="1_reis_golovna_v_obudvi.html">Головна</a>
+	                </li>
+	                <li>
+	                	<a href="#">Мої квитки</a>
+	                </li>
+	                <li>
+	                	<a href="#">Корисна інформація</a>
+	                </li>
+	                <li>
+	                	<a href="#">Новини</a>
+	                </li>
+	                <li>
+	                	<a href="#">Контакти</a>
+	                </li>
+	            	<li class="full-version-batton">
+	            		<a href="#">Повна версія</a>
+	            	</li>
+	            </ul>
+	        </div>
+	        <div class="header-info">
+	        	<a href="tel:123 456-7890">
+	        		<img src="images/icon-phone.png" alt="icon-phone">
+	        		<span class="phone">+38 066 44 44 365</span>
+	        		<span class="phone">+38 0372 55 64 63</span>
+	        	</a>
+	        	<a class="ask-a-question" href="#">Ask A Question</a>
+	        </div>
+	        <div class="call-us-block">
+				<label for="hider"><img src="images/icon-phone.png" alt="icon-phone"></label>
+				<input type="checkbox" checked="no" id="hider">
+				<div id="info-mobile" class="header-info-mobile">
+		        	<a href="tel:380664444365">
+		        		<span class="phone">+38 066 44 44 365</span>
+		        	</a>
+		        	<a href="tel:80372556463">
+		        		<span class="phone">+38 0372 55 64 63</span>
+		        	</a>
+		        </div>
+	        </div>
+	        <h1 class="logo">
+	        	<a href="culture_academy_home_3.html">
+	        		<img src="images/logo.png" alt="Calture Exchange Academy">
+	        	</a>
+	        </h1>
+        </div>
+	</header>
+	<section class="page-navigation">
+		<div class="wrapper">
+        	<div class="nav-block">
+				<a href="#">
+					<img src="images/arrow-left.png" alt="arrow-left">
+        			<h4>оформити замовлення</h4>
+				</a>
+        	</div>
+		</div>
+	</section>
+	<section class="to-order-page">
+		<div class="order-page-title">
+			<div class="wrapper">
+				<h2 class="title">Купити / Забронювати рейс</h2>
+			</div>
+		</div>
+			<div class="order-block">
+				<div class="form-wrapper">
+					<div class="wrapper">
+						<form id="order-form" method="post" action="">
+	                        <label for="reis-number">
+	                        	<span>Номер рейсу</span>
+	                        	<input id="reis-number" type="text" name="reis-number">
+	                    	</label>
+	                    	<label for="reis">
+	                    		<span>Рейс</span>
+	                        	<input id="reis" type="text" name="reis">
+	                    	</label>
+	                    	<label for="check-out-date">
+	                    		<span>Дата виїзду</span>
+	                        	<input id="check-out-date" type="check-out-date" name="check-out-date">
+	                    	</label>
+	                    	<label for="check-out-time">
+	                    		<span>Час виїзду</span>
+	                        	<input id="check-out-time" type="check-out-time" name="check-out-time">
+	                    	</label>
+	                    	<label for="check-out-place">
+	                    		<span>Місце виїзду</span>
+	                        	<input id="check-out-place" type="text" name="check-out-place">
+	                    	</label>
+	                    	<label for="ticket-place">
+	                    		<span>Місце № </span>
+	                        	<input id="ticket-place" type="text" name="ticket-place">
+	                    	</label>
+	                    	<select class="ui dropdown">
+							  <option>Дорослий</option>
+							  <option value="long-term-study">Дорослий</option>
+							  <option value="short-term-visit">Дорослий</option>
+							  <option value="college-prep">Дорослий</option>
+							</select>
+	                    	<label for="full-name">
+	                    		<span>ПІП пасажира</span>
+	                        	<input id="full-name" type="text" name="full-name" placeholder="Приклад, Іван Іванов">
+	                    	</label>
+	                    	<label for="phone">
+	                    		<span>Телефон</span>
+	                        	<input id="phone" type="tel" name="phone" placeholder="+380">
+	                    	</label>
+	                    	<label for="email">
+	                    		<span>E-mail</span>
+	                        	<input id="email" type="email" name="email" placeholder="Приклад, example@mail.com">
+	                    	</label>
+	                    	<label for="price">
+	                    		<span>Ціна</span>
+	                        	<input id="price" type="text" name="price">
+	                    	</label>
+	                    	<div class="terms-of-return">
+	                    		<h2 class="terms-title">Умови повернення:</h2>
+	                    		<ul class="terms-list">
+	                    			<li>Більше ніж за 21 день - 100% вартості квитка</li>
+	                    			<li>Від 15 до 20 днів - 80% вартості квитка</li>
+	                    			<li>Від 14 до 7 днів - 50% від вартості квитка</li>
+	                    			<li>Від 6 до 3 днів -  30% від вартості квитка</li>
+	                    			<li>Меньше ніж за 2 дні - 0% від вартості квитка</li>
+	                    		</ul>
+	                    	</div>
+	                    	<label for="check-form">
+	                    		<input id="check-form" type="checkbox" name="check-form">
+	                    		Я погоджуюсь з <a href="#">Договором публічної оферти</a>
+	                		</label>
+	                		<h2 class="public-offer">Ви маєте погодитися з договором публічної оферти!</h2>
+                		</form>
+            		</div>
+            	</div>
+                <div class="wrapper">
+            		<a class="ticket-back-button" href="#">назад</a>
+            		<input class="button-order-form" form="order-form" type="submit" for="order-form" name="buy" value="купити">
+            		<a class="reserve-button" href="#">Забронювати</a>
+        		</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper">
+			<p class="footer-content">
+				пасажирські перевезення
+				<span>по Україні, Європі та країнах СНД</span>
+			</p>
+			<span class="footer-phone">+38 (066) 44 44 365 </span>
+			<span class="footer-phone">+38 (0372) 55 64 63</span>
+			<p class="copyright">
+				Web development / SEO &copy;
+				<a href="http://globalvision.name/">Global Vision</a>
+			</p>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.ui.datepicker-ru.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script>
+	$(function() {
+	    $("#datepicker1").datepicker($.datepicker.regional["ru"]);
+	    $("#datepicker2").datepicker($.datepicker.regional["ru"]);
+	});
+	</script>
+	<script src="js/semantic.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script>
+		$(document).ready(function($) {
+			$('.ui.dropdown')
+			  .dropdown()
+			;
+		});		
+	</script>
+</body>
+</html>

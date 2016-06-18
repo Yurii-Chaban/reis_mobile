@@ -2476,12 +2476,294 @@ input:checked + #info-mobile {
   margin-top: 10px;
 }
 
-/* line 2048, ../sass/styles.scss */
+/* line 2050, ../sass/styles.scss */
+.to-order-page .order-page-title,
+.to-back-order-page .order-page-title {
+  margin: 0 auto;
+}
+/* line 2052, ../sass/styles.scss */
+.to-order-page .order-page-title .title,
+.to-back-order-page .order-page-title .title {
+  margin: 0 auto;
+  text-align: center;
+  color: #006598;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 2063, ../sass/styles.scss */
+.to-order-page .order-block .form-wrapper,
+.to-back-order-page .order-block .form-wrapper {
+  margin: 17px auto 38px;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+}
+/* line 2068, ../sass/styles.scss */
+.to-order-page .order-block #order-form,
+.to-back-order-page .order-block #order-form {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 2075, ../sass/styles.scss */
+.to-order-page .order-block #order-form label,
+.to-back-order-page .order-block #order-form label {
+  float: left;
+  clear: both;
+  display: block;
+  width: 100%;
+  color: #033e60;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 400;
+  line-height: 40px;
+}
+/* line 2085, ../sass/styles.scss */
+.to-order-page .order-block #order-form label span,
+.to-back-order-page .order-block #order-form label span {
+  padding-left: 20px;
+}
+/* line 2089, ../sass/styles.scss */
+.to-order-page .order-block #order-form input,
+.to-back-order-page .order-block #order-form input {
+  display: block;
+  width: 100%;
+  height: 39px;
+  text-align: center;
+  color: #009de6;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  border-radius: 30px;
+  border: 0.2px solid #676767;
+}
+/* line 2101, ../sass/styles.scss */
+.to-order-page .order-block #order-form #phone,
+.to-order-page .order-block #order-form #email,
+.to-back-order-page .order-block #order-form #phone,
+.to-back-order-page .order-block #order-form #email {
+  border-color: #ca0000;
+}
+/* line 2105, ../sass/styles.scss */
+.to-order-page .order-block #order-form #price,
+.to-back-order-page .order-block #order-form #price {
+  margin-bottom: 20px;
+}
+/* line 2108, ../sass/styles.scss */
+.to-order-page .order-block #order-form #check-form,
+.to-back-order-page .order-block #order-form #check-form {
+  float: left;
+  width: 21px;
+  height: 21px;
+  margin-right: 11px;
+  background-color: white;
+  border: none;
+  border: 1px solid silver;
+}
+/* line 2117, ../sass/styles.scss */
+.to-order-page .order-block #order-form label[for="check-form"],
+.to-back-order-page .order-block #order-form label[for="check-form"] {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #939598;
+}
+/* line 2123, ../sass/styles.scss */
+.to-order-page .order-block #order-form label[for="check-form"] a,
+.to-back-order-page .order-block #order-form label[for="check-form"] a {
+  color: #006598;
+}
+/* line 2127, ../sass/styles.scss */
+.to-order-page .order-block #order-form .public-offer,
+.to-back-order-page .order-block #order-form .public-offer {
+  margin: 0 auto 20px;
+  color: #ca0000;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+}
+/* line 2134, ../sass/styles.scss */
+.to-order-page .order-block #order-form .terms-of-return,
+.to-back-order-page .order-block #order-form .terms-of-return {
+  margin-top: 15px;
+}
+/* line 2136, ../sass/styles.scss */
+.to-order-page .order-block #order-form .terms-of-return .terms-title,
+.to-back-order-page .order-block #order-form .terms-of-return .terms-title {
+  clear: both;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+}
+/* line 2144, ../sass/styles.scss */
+.to-order-page .order-block #order-form .terms-of-return .terms-list,
+.to-back-order-page .order-block #order-form .terms-of-return .terms-list {
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* line 2149, ../sass/styles.scss */
+.to-order-page .order-block #order-form .terms-of-return .terms-list li,
+.to-back-order-page .order-block #order-form .terms-of-return .terms-list li {
+  display: block;
+  margin: 15px auto;
+  text-align: left;
+}
+/* line 2156, ../sass/styles.scss */
+.to-order-page .order-block #order-form .ui.selection.dropdown,
+.to-back-order-page .order-block #order-form .ui.selection.dropdown {
+  cursor: pointer;
+  word-wrap: break-word;
+  line-height: 1em;
+  white-space: normal;
+  outline: 0;
+  -webkit-transform: rotateZ(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotateZ(0deg);
+  min-width: 14em;
+  min-height: 2.7142em;
+  color: #009de6;
+  display: inline-block;
+  padding: 0.78571429em 2.6em 0.78571429em 1em;
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: none;
+  border-radius: 0.28571429rem;
+  -webkit-transition: box-shadow 0.1s ease, width 0.1s ease;
+  transition: box-shadow 0.1s ease, width 0.1s ease;
+}
+/* line 2176, ../sass/styles.scss */
+.to-order-page .order-block #order-form .ui.dropdown > .text,
+.to-back-order-page .order-block #order-form .ui.dropdown > .text {
+  display: inline-block;
+  -webkit-transition: none;
+  transition: none;
+  color: #009de6;
+  margin-left: -10px;
+}
+/* line 2183, ../sass/styles.scss */
+.to-order-page .order-block #order-form .ui.selection.dropdown .menu > .item,
+.to-back-order-page .order-block #order-form .ui.selection.dropdown .menu > .item {
+  border-top: 1px solid #FAFAFA;
+  padding: 0.71428571rem 1.14285714rem !important;
+  white-space: normal;
+  word-wrap: normal;
+  color: #009de6;
+  text-align: center;
+}
+/* line 2191, ../sass/styles.scss */
+.to-order-page .order-block #order-form .ui.selection.dropdown > .search.icon, .to-order-page .order-block #order-form .ui.selection.dropdown > .delete.icon, .to-order-page .order-block #order-form .ui.selection.dropdown > .dropdown.icon,
+.to-back-order-page .order-block #order-form .ui.selection.dropdown > .search.icon,
+.to-back-order-page .order-block #order-form .ui.selection.dropdown > .delete.icon,
+.to-back-order-page .order-block #order-form .ui.selection.dropdown > .dropdown.icon {
+  cursor: pointer;
+  position: absolute;
+  top: auto;
+  width: 16%;
+  right: 0;
+  z-index: 3;
+  height: 100%;
+  margin: -0.9em -1.0em 0em -0.9em;
+  padding: 0.9em;
+  right: 1em;
+  color: #006496;
+  text-align: center;
+  background-color: #d5d5d5;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+/* line 2209, ../sass/styles.scss */
+.to-order-page .order-block #order-form .ui.selection.dropdown,
+.to-back-order-page .order-block #order-form .ui.selection.dropdown {
+  width: 100%;
+  margin: 20px auto;
+  border: 1px solid #676767;
+  text-align: center;
+}
+/* line 2215, ../sass/styles.scss */
+.to-order-page .order-block #order-form .ui.selection.active.dropdown .menu,
+.to-back-order-page .order-block #order-form .ui.selection.active.dropdown .menu {
+  border-color: #676767;
+}
+/* line 2220, ../sass/styles.scss */
+.to-order-page .ticket-back-button,
+.to-back-order-page .ticket-back-button {
+  display: block;
+  width: 100%;
+  height: 56px;
+  margin: 35px auto;
+  color: #006598;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 56px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to top, #cacaca 0%, #efefef 100%);
+}
+/* line 2234, ../sass/styles.scss */
+.to-order-page .button-order-form,
+.to-order-page .reserve-button,
+.to-back-order-page .button-order-form,
+.to-back-order-page .reserve-button {
+  display: block;
+  width: 100%;
+  height: 56px;
+  margin: 35px auto;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 56px;
+  text-align: center;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  background-image: linear-gradient(to top, #589a10 0%, #8dd61a 100%);
+}
+/* line 2250, ../sass/styles.scss */
+.to-order-page .img-block-direction,
+.to-back-order-page .img-block-direction {
+  margin: 17px auto 0;
+  padding: 10px 0;
+  border-top: 1px solid #c6c6c6;
+  border-bottom: 1px solid #c6c6c6;
+}
+/* line 2255, ../sass/styles.scss */
+.to-order-page .img-block-direction .img-direction,
+.to-back-order-page .img-block-direction .img-direction {
+  vertical-align: middle;
+}
+/* line 2257, ../sass/styles.scss */
+.to-order-page .img-block-direction .img-direction img,
+.to-back-order-page .img-block-direction .img-direction img {
+  float: left;
+  margin-right: 16px;
+}
+/* line 2261, ../sass/styles.scss */
+.to-order-page .img-block-direction .img-direction h3,
+.to-back-order-page .img-block-direction .img-direction h3 {
+  color: #74b917;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+/* line 2273, ../sass/styles.scss */
+.to-back-order-page .order-block .form-wrapper {
+  border: none;
+}
+
+/* line 2279, ../sass/styles.scss */
 footer {
   padding: 34px 0 25px;
   background: url(../images/footer-bg.jpg) repeat-x;
 }
-/* line 2051, ../sass/styles.scss */
+/* line 2282, ../sass/styles.scss */
 footer .footer-content {
   max-width: 218px;
   margin: 0 auto 14px;
@@ -2493,13 +2775,13 @@ footer .footer-content {
   font-style: italic;
   text-transform: uppercase;
 }
-/* line 2062, ../sass/styles.scss */
+/* line 2293, ../sass/styles.scss */
 footer span {
   display: block;
   text-transform: none;
   font-weight: 400;
 }
-/* line 2067, ../sass/styles.scss */
+/* line 2298, ../sass/styles.scss */
 footer .footer-phone {
   display: block;
   margin: 20px auto;
@@ -2509,7 +2791,7 @@ footer .footer-phone {
   font-weight: 700;
   line-height: 20px;
 }
-/* line 2076, ../sass/styles.scss */
+/* line 2307, ../sass/styles.scss */
 footer .copyright {
   margin: 18px auto 0;
   text-align: center;
@@ -2518,12 +2800,12 @@ footer .copyright {
   font-weight: 400;
   line-height: 20px;
 }
-/* line 2084, ../sass/styles.scss */
+/* line 2315, ../sass/styles.scss */
 footer .copyright a {
   color: #636363;
   text-decoration: none;
 }
-/* line 2088, ../sass/styles.scss */
+/* line 2319, ../sass/styles.scss */
 footer .copyright a:hover {
   text-decoration: underline;
 }
