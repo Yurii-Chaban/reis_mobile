@@ -95,7 +95,7 @@
 				<input class="text-field" type="text" name="from-ticket" placeholder="Звідки">
 				<input class="text-field" type="text" name="where-ticket" placeholder="Куди">
 				<p class="date"> 
-					<input type="text" id="datepicker1" name="datepicker1" value="">
+				<input class="DateFrom">
 					<img src="images/calendar.png" alt="calendar">
 				</p>
 				<div class="ather-date">
@@ -175,10 +175,9 @@
 	    });
 	</script>
 	<script>
-	$(function() {
-	    $("#datepicker1").datepicker($.datepicker.regional["ru"]);
-	    $("#datepicker2").datepicker($.datepicker.regional["ru"]);
-	});
+		$("input.DateFrom").datepicker({
+		    minDate: 0  
+		});
 	</script>
 </body>
 </html>
